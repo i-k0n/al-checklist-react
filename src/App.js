@@ -1,10 +1,12 @@
 import React from "react";
-import Card from "./components/Card";
+import { Filters } from "./components/Filters";
+import { Ships } from "./components/Ships";
 
 function App() {
   return (
-    <div className="ships-container">
-      <Card />
+    <div className="wrapper">
+      <Filters />
+      <Ships />
     </div>
   );
 }

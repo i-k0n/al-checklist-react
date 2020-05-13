@@ -102,10 +102,6 @@ label#hide-owned {
     margin-right: 15px;
 }
 
-label#hide-owned,
-.button,
-.sort-text {}
-
 label#hide-owned::after {
     content: "";
     position: absolute;
@@ -130,8 +126,6 @@ input#hide-toggle:checked+label:after {
 label#hide-owned:active::after {
     width: 26px;
 }
-
-.search {}
 
 .button-container,
 #sort {
@@ -245,35 +239,35 @@ label#hide-owned:active::after {
 }
 
 .counter.eagle::after {
-    background-image: url(/icon-faction-eagle.png);
+    background-image: url(../img/icon-faction-eagle.png);
 }
 
 .counter.royal::after {
-    background-image: url(/icon-faction-royal.png);
+    background-image: url(../img/icon-faction-royal.png);
 }
 
 .counter.sakura::after {
-    background-image: url(/icon-faction-sakura.png);
+    background-image: url(../img/icon-faction-sakura.png);
 }
 
 .counter.ironblood::after {
-    background-image: url(/icon-faction-ironblood.png);
+    background-image: url(../img/icon-faction-ironblood.png);
 }
 
 .counter.dragon::after {
-    background-image: url(/icon-faction-dragon.png);
+    background-image: url(../img/icon-faction-dragon.png);
 }
 
 .counter.sardegna::after {
-    background-image: url(/icon-faction-sardegna.png);
+    background-image: url(../img/icon-faction-sardegna.png);
 }
 
 .counter.vichya::after {
-    background-image: url(/icon-faction-vichya.png);
+    background-image: url(../img/icon-faction-vichya.png);
 }
 
 .counter.iris::after {
-    background-image: url(/icon-faction-iris.png);
+    background-image: url(../img/icon-faction-iris.png);
 }
 
 .counter span {
@@ -603,7 +597,7 @@ label#hide-owned:active::after {
     }
     #sort {
         grid-template-columns: max-content repeat( 4, [col-start] minmax(93px, 124px) [col-end]);
-        max-width: 558px;
+        /* max-width: 558px; */
         grid-template-areas: "sort-text id name class rarity" "collapse-filters collapse-filters collapse-filters toggle owned";
         justify-self: center;
     }
@@ -631,7 +625,7 @@ label#hide-owned:active::after {
     }
     #sort {
         grid-template-columns: max-content repeat( 4, [col-start] minmax(min-content, 79px) [col-end]);
-        max-width: 372px;
+        /* max-width: 372px; */
         grid-template-areas: "sort-text id name class rarity" "collapse-filters collapse-filters collapse-filters toggle owned";
         justify-self: center;
     }

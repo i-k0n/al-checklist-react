@@ -5,18 +5,7 @@ const onClick = () => {
   console.log("You clicked a button");
 };
 
-const sortBy = [
-  "Vanguard",
-  "Main",
-  "DD",
-  "CL",
-  "CA",
-  "BB",
-  "CV",
-  "AR",
-  "SS",
-  "BM",
-];
+const sortBy = ["ID", "Name", "Class", "Rarity"];
 
 export const Sort = () => {
   return (

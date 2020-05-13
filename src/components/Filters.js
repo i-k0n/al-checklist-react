@@ -77,8 +77,14 @@ export const Filters = () => {
       <div id="faction-filters" className="button-container">
         {factionFilters.map((filter) => {
           return (
-            <FilterButton onClick={onClick} dataFilter={filter.short}>
-              <img src={`./assets/img/icon-faction-${filter.short}.png`} />
+            <FilterButton
+              onClick={onClick}
+              dataFilter={filter.short}
+              key={filter.short}>
+              <img
+                src={`./assets/img/icon-faction-${filter.short}.png`}
+                alt={filter.full}
+              />
               {filter.full}
             </FilterButton>
           );
@@ -87,7 +93,10 @@ export const Filters = () => {
       <div id="type-filters" className="button-container">
         {typeFilters.map((filter) => {
           return (
-            <FilterButton onClick={onClick} dataFilter={filter.toLowerCase()}>
+            <FilterButton
+              onClick={onClick}
+              dataFilter={filter.toLowerCase()}
+              key={filter}>
               {filter === "AR" ? "Repair" : filter}
             </FilterButton>
           );
@@ -98,12 +107,13 @@ export const Filters = () => {
           return (
             <FilterButton
               onClick={onClick}
-              dataFilter={filter.replace(/\s+/g, "-").toLowerCase()}>
+              dataFilter={filter.replace(/\s+/g, "-").toLowerCase()}
+              key={filter}>
               {filter}
             </FilterButton>
           );
         })}
-        <button id="clear-filters" class="button disabled" data-filter="">
+        <button id="clear-filters" className="button disabled" data-filter="">
           Clear Filters
         </button>
       </div>

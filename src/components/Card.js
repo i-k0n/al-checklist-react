@@ -1,48 +1,60 @@
 import React from "react";
 
-export default function Card() {
+export default function Card({ ship, index }) {
   return (
     <label
       className="ship show"
-      data-id="188"
-      data-index="146"
-      data-name="Mogami"
-      data-class="CL"
-      data-rarity="rarity-c"
-      data-faction="Sakura Empire"
+      data-id={ship.id}
+      data-index={index}
+      data-name={ship.name}
+      data-class={ship.classAbbr}
+      data-rarity={ship.rarityRank}
+      data-faction={ship.faction}
       data-filters="vanguard cl elite sakura light">
       <input type="checkbox" id="188" />
-      <span className="ship-type cl" data-title="Light Cruiser">
-        CL
+      <span
+        className={`ship-type ${ship.classAbbr.toLowerCase()}`}
+        data-title={ship.class}>
+        {ship.classAbbr}
       </span>
       <img
         className="ship-img rarity-4"
         src="./assets/img/ship-blank.png"
-        data-echo="./img/188-Mogami,jpg"
+        data-echo={`./img/${ship.id}-${ship.name},jpg`}
         alt="Mogami"
       />
       <div className="ship-info">
         <div className="ship-id-and-ship-type-text">
-          <span className="ship-id">188</span>
+          <span className="ship-id">{ship.id}</span>
           <span
             className="ship-type-text"
-            data-title="Light Cruiser"
-            data-abbr="CL">
-            CL
+            data-title={ship.class}
+            data-abbr={ship.classAbbr}>
+            {ship.classAbbr}
           </span>
         </div>
-        <h4 className="ship-name">Mogami</h4>
+        <h4 className="ship-name">{ship.name}</h4>
         <div className="ship-rarity-and-ship-faction">
-          <span className="ship-rarity">Elite</span>
-          <span className="ship-faction">Sakura Empire</span>
+          <span className="ship-rarity">{ship.rarity}</span>
+          <span className="ship-faction">{ship.faction}</span>
         </div>
         <div className="ship-build-pool-and-ship-build-time">
-          <span className="ship-build-pool" title="Light Build">
-            Light:
+          <span
+            className="ship-build-pool"
+            title={
+              ship.buildPool.length ? ship.buildPool[0].pool + " Build" : null
+            }>
+            {ship.buildPool.length ? ship.buildPool[0].pool + ": " : null}
           </span>
-          <span className="ship-build-time">01:48:00</span>
+          <span className="ship-build-time">
+            {ship.buildPool.length ? ship.buildPool[0].time : null}
+          </span>
         </div>
-        <div className="ship-drop-map"></div>
+        <div className="ship-drop-map">
+          {ship.acquisition.length
+            ? ship.acquisition[0].task + ": " + ship.acquisition[0].req
+            : null}
+        </div>
       </div>
     </label>
   );

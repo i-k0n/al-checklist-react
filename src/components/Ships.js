@@ -1,15 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Card from "./Card";
-import * as shipsData from "../data/ships4.json";
 
-const ships = shipsData.default;
-console.log("ships: ", ships);
+export const Ships = (props) => {
+  // const { ships, setShips } = useState({ data });
+  // console.log("data: ", props.data);
+  // const renderShips = useEffect(() => {
+  //   console.log("ships: ", ships);
+  // }, [ships]);
 
-export const Ships = () => {
+  const onClick = (ship, index) => {
+    console.log(`${ship.name}: ${index}`);
+  };
+
   return (
     <div className="ships-container">
-      {ships.map((ship, index) => {
-        return <Card ship={ship} index={index} key={index} />;
+      {props.data.map((ship, index) => {
+        return <Card ship={ship} index={index} key={index} onClick={onClick} />;
       })}
     </div>
   );

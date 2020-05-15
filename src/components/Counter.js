@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const counters = [
   {
@@ -48,13 +48,33 @@ const counters = [
 ];
 
 export const Counter = () => {
+  const UpdateCounters = (faction) => {
+    useEffect(() => {
+      console.log("faction: ", faction);
+      console.log(
+        document.querySelectorAll('.ship[data-filters*="' + faction + '"]')
+      );
+      let factionCounter = document.querySelectorAll(
+        '.ship[data-filters*="' + faction + '"]'
+      );
+      console.log("factionCounter: ", factionCounter);
+      let factionCompleted = document.querySelectorAll(
+        `.ship[data-filters*="${faction}"].completed`
+      );
+      console.log("factionCompleted: ", factionCompleted);
+      document.querySelector(
+        "li.counter." + faction + " > span"
+      ).textContent = ` ${factionCompleted.length} / ${factionCounter.length}`;
+    }, []);
+  };
+
   return (
     <ul className="counters">
       {counters.map((counter) => {
         return (
           <li className={`counter ${counter.short}`} key={counter.full}>
             {counter.full}
-            <span></span>
+            <span>{UpdateCounters(counter.short)}</span>
           </li>
         );
       })}

@@ -14,7 +14,7 @@ function App() {
         <Sort data={data} />
         <Counter data={data} />
       </div>
-      <Ships data={data} />
+      {!data ? "Loading ships..." : <Ships data={data} />}
     </Fragment>
   );
 }

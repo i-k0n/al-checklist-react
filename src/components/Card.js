@@ -19,9 +19,11 @@ export default function Card({ ship, index, onClick }) {
   } else {
     filters.push("other");
   }
+  filters.push(ship.name.toLowerCase());
+  filters.push(ship.class.toLowerCase());
   filters.push(ship.classAbbr.toLowerCase());
   filters.push(ship.rarity.split(" ").join("-").toLowerCase());
-  filters.push(ship.faction.split(" ").shift().toLowerCase());
+  filters.push(ship.faction.toLowerCase());
   filters.push(
     ship.buildPool[0].pool ? ship.buildPool[0].pool.toLowerCase() : ""
   );

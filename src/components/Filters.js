@@ -85,7 +85,7 @@ export const Filters = () => {
   const [textFilter, setTextFilter] = useState(" ");
 
   const handleChange = (value) => {
-    setTextFilter(value);
+    !value ? (value = " ") : setTextFilter(value);
     console.log(textFilter);
     onClick(textFilter);
   };

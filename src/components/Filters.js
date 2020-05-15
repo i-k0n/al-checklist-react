@@ -1,20 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FilterButton } from "./FilterButton";
 
-const onClick = (filter) => {
-  // console.log(`You clicked the ${filter} button`);
-  const filterElems = document.querySelectorAll(
-    ".ship[data-filters*='" + filter + "']"
-  );
-  const allElems = document.querySelectorAll(".ship");
-  allElems.forEach((el) => {
-    el.classList.remove("show");
-  });
-  filterElems.forEach((el) => {
-    el.classList.add("show");
-  });
-};
-
 const factionFilters = [
   {
     full: "Eagle Union",
@@ -81,6 +67,39 @@ const rarityFilters = [
   "Retrofit",
 ];
 
+const onClick = (filter) => {
+  // console.log(`You clicked the ${filter} button`);
+  const clearFiltersButton = document.getElementById("clear-filters");
+  if (filter && filter !== " ") {
+    clearFiltersButton.classList.remove("disabled");
+  }
+  const filterElems = document.querySelectorAll(
+    ".ship[data-filters*='" + filter + "']"
+  );
+  const allElems = document.querySelectorAll(".ship");
+  allElems.forEach((el) => {
+    el.classList.remove("show");
+  });
+  filterElems.forEach((el) => {
+    el.classList.add("show");
+  });
+};
+
+const clearFilters = () => {
+  const clearFiltersButton = document.getElementById("clear-filters");
+  const searchText = document.getElementById("textFilter");
+  const allElems = document.querySelectorAll(".ship");
+
+  searchText.value = " ";
+
+  allElems.forEach((el) => {
+    el.classList.remove("show");
+    el.classList.add("show");
+  });
+
+  clearFiltersButton.classList.add("disabled");
+};
+
 export const Filters = () => {
   const [textFilter, setTextFilter] = useState(" ");
 
@@ -141,7 +160,13 @@ export const Filters = () => {
             </FilterButton>
           );
         })}
-        <button id="clear-filters" className="button disabled" data-filter="">
+        <button
+          id="clear-filters"
+          className="button disabled"
+          data-filter=""
+          onClick={() => {
+            clearFilters();
+          }}>
           Clear Filters
         </button>
         <input

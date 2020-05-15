@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { FilterButton } from "./FilterButton";
 
 const onClick = (filter) => {
-  console.log(`You clicked the ${filter} button`);
+  // console.log(`You clicked the ${filter} button`);
   const filterElems = document.querySelectorAll(
     ".ship[data-filters*='" + filter + "']"
   );
@@ -82,6 +82,18 @@ const rarityFilters = [
 ];
 
 export const Filters = () => {
+  const [textFilter, setTextFilter] = useState(" ");
+
+  const handleChange = (value) => {
+    setTextFilter(value);
+    console.log(textFilter);
+    onClick(textFilter);
+  };
+
+  useEffect(() => {
+    onClick(textFilter);
+  }, [textFilter]);
+
   return (
     <div className="filters">
       <div id="faction-filters" className="button-container">
@@ -132,6 +144,16 @@ export const Filters = () => {
         <button id="clear-filters" className="button disabled" data-filter="">
           Clear Filters
         </button>
+        <input
+          type="text"
+          name="textFilter"
+          id="textFilter"
+          value={textFilter}
+          onChange={(e) => {
+            e.preventDefault();
+            handleChange(e.target.value);
+          }}
+        />
       </div>
     </div>
   );

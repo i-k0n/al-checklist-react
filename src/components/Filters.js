@@ -1,8 +1,18 @@
 import React from "react";
 import { FilterButton } from "./FilterButton";
 
-const onClick = () => {
-  console.log("You clicked a button");
+const onClick = (filter) => {
+  console.log(`You clicked the ${filter} button`);
+  const filterElems = document.querySelectorAll(
+    ".ship[data-filters*='" + filter + "']"
+  );
+  const allElems = document.querySelectorAll(".ship");
+  allElems.forEach((el) => {
+    el.classList.remove("show");
+  });
+  filterElems.forEach((el) => {
+    el.classList.add("show");
+  });
 };
 
 const factionFilters = [
@@ -78,7 +88,9 @@ export const Filters = () => {
         {factionFilters.map((filter) => {
           return (
             <FilterButton
-              onClick={onClick}
+              onClick={() => {
+                onClick(filter.short);
+              }}
               dataFilter={filter.short}
               key={filter.short}>
               <img
@@ -91,10 +103,12 @@ export const Filters = () => {
         })}
       </div>
       <div id="type-filters" className="button-container">
-        {typeFilters.map((filter) => {
+        {typeFilters.map((filter, i) => {
           return (
             <FilterButton
-              onClick={onClick}
+              onClick={() => {
+                onClick(filter.toLowerCase());
+              }}
               dataFilter={filter.toLowerCase()}
               key={filter}>
               {filter === "AR" ? "Repair" : filter}
@@ -103,10 +117,12 @@ export const Filters = () => {
         })}
       </div>
       <div id="rarity-filters" className="button-container">
-        {rarityFilters.map((filter) => {
+        {rarityFilters.map((filter, i) => {
           return (
             <FilterButton
-              onClick={onClick}
+              onClick={() => {
+                onClick(filter.replace(/\s+/g, "-").toLowerCase());
+              }}
               dataFilter={filter.replace(/\s+/g, "-").toLowerCase()}
               key={filter}>
               {filter}

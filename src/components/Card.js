@@ -1,6 +1,34 @@
 import React from "react";
 
-export default function Card({ ship, index }) {
+export default function Card({ ship, index, onClick }) {
+  let filters = [];
+  if (
+    ship.classAbbr === "DD" ||
+    ship.classAbbr === "CA" ||
+    ship.classAbbr === "CL"
+  ) {
+    filters.push("vanguard");
+  } else if (
+    ship.classAbbr === "BB" ||
+    ship.classAbbr === "BC" ||
+    ship.classAbbr === "CV" ||
+    ship.classAbbr === "CVL" ||
+    ship.classAbbr === "AR"
+  ) {
+    filters.push("main");
+  } else {
+    filters.push("other");
+  }
+  filters.push(ship.classAbbr.toLowerCase());
+  filters.push(ship.rarity.split(" ").join("-").toLowerCase());
+  filters.push(ship.faction.split(" ").shift().toLowerCase());
+  filters.push(
+    ship.buildPool[0].pool ? ship.buildPool[0].pool.toLowerCase() : ""
+  );
+  filters.push(ship.id.slice(0, 6) === "Collab" ? "collab" : "");
+  filters.push(ship.collection);
+  filters.push(parseInt(ship.id) >= 3005 ? "retrofit" : "");
+
   return (
     <label
       className="ship show"
@@ -10,7 +38,12 @@ export default function Card({ ship, index }) {
       data-class={ship.classAbbr}
       data-rarity={ship.rarityRank}
       data-faction={ship.faction}
-      data-filters="vanguard cl elite sakura light">
+      onClick={(e) => {
+        // prevent default event from running render twice
+        e.preventDefault();
+        onClick(ship, index);
+      }}
+      data-filters={filters.join(" ").replace(/\s+/g, " ").trim()}>
       <input type="checkbox" id="188" />
       <span
         className={`ship-type ${ship.classAbbr.toLowerCase()}`}

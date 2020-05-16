@@ -67,14 +67,19 @@ const rarityFilters = [
   "Retrofit",
 ];
 
-const onClick = (filter) => {
+const onClick = (filter, type) => {
   // console.log(`You clicked the ${filter} button`);
+  // console.log("type: ", type);
+  // console.log(".ship[data-" + type + "*='" + filter + "']");
+  if (!type) {
+    type = "filters";
+  }
   const clearFiltersButton = document.getElementById("clear-filters");
   if (filter && filter !== " ") {
     clearFiltersButton.classList.remove("disabled");
   }
   const filterElems = document.querySelectorAll(
-    ".ship[data-filters*='" + filter + "']"
+    ".ship[data-" + type + "*='" + filter + "']"
   );
   const allElems = document.querySelectorAll(".ship");
   allElems.forEach((el) => {
@@ -120,7 +125,7 @@ export const Filters = () => {
           return (
             <FilterButton
               onClick={() => {
-                onClick(filter.short);
+                onClick(filter.short, "filters");
               }}
               dataFilter={filter.short}
               key={filter.short}>
@@ -138,7 +143,7 @@ export const Filters = () => {
           return (
             <FilterButton
               onClick={() => {
-                onClick(filter.toLowerCase());
+                onClick(filter.toUpperCase(), "class");
               }}
               dataFilter={filter.toLowerCase()}
               key={filter}>
@@ -152,7 +157,7 @@ export const Filters = () => {
           return (
             <FilterButton
               onClick={() => {
-                onClick(filter.replace(/\s+/g, "-").toLowerCase());
+                onClick(filter.replace(/\s+/g, "-").toLowerCase(), "filters");
               }}
               dataFilter={filter.replace(/\s+/g, "-").toLowerCase()}
               key={filter}>

@@ -50,18 +50,18 @@ const counters = [
 export const Counter = () => {
   const UpdateCounters = (faction) => {
     useEffect(() => {
-      console.log("faction: ", faction);
-      console.log(
-        document.querySelectorAll('.ship[data-filters*="' + faction + '"]')
-      );
+      // console.log("faction: ", faction);
+      // console.log(
+      //   document.querySelectorAll('.ship[data-filters*="' + faction + '"]')
+      // );
       let factionCounter = document.querySelectorAll(
         '.ship[data-filters*="' + faction + '"]'
       );
-      console.log("factionCounter: ", factionCounter);
+      // console.log("factionCounter: ", factionCounter);
       let factionCompleted = document.querySelectorAll(
         `.ship[data-filters*="${faction}"].completed`
       );
-      console.log("factionCompleted: ", factionCompleted);
+      // console.log("factionCompleted: ", factionCompleted);
       document.querySelector(
         "li.counter." + faction + " > span"
       ).textContent = ` ${factionCompleted.length} / ${factionCounter.length}`;

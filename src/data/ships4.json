@@ -4834,7 +4834,7 @@
     "nameSafe": "An-Shan",
     "rarity": "Elite",
     "rarityRank": "rarity-c",
-    "faction": "Eastern Radiance",
+    "faction": "Dragon Empery",
     "buildPool": [
       {
         "pool": "Event",
@@ -4859,7 +4859,7 @@
     "nameSafe": "Fu-Shun",
     "rarity": "Elite",
     "rarityRank": "rarity-c",
-    "faction": "Eastern Radiance",
+    "faction": "Dragon Empery",
     "buildPool": [
       {
         "pool": "Event",
@@ -4884,7 +4884,7 @@
     "nameSafe": "Chang-Chun",
     "rarity": "Elite",
     "rarityRank": "rarity-c",
-    "faction": "Eastern Radiance",
+    "faction": "Dragon Empery",
     "buildPool": [
       {
         "pool": "Light",
@@ -4903,7 +4903,7 @@
     "nameSafe": "Tai-Yuan",
     "rarity": "Elite",
     "rarityRank": "rarity-c",
-    "faction": "Eastern Radiance",
+    "faction": "Dragon Empery",
     "buildPool": [
       {
         "pool": "Light",
@@ -4922,7 +4922,7 @@
     "nameSafe": "Yat-Sen",
     "rarity": "Elite",
     "rarityRank": "rarity-c",
-    "faction": "Eastern Radiance",
+    "faction": "Dragon Empery",
     "buildPool": [
       {
         "pool": "Light",
@@ -4941,7 +4941,7 @@
     "nameSafe": "Ning-Hai",
     "rarity": "Elite",
     "rarityRank": "rarity-c",
-    "faction": "Eastern Radiance",
+    "faction": "Dragon Empery",
     "buildPool": [
       {
         "pool": "Light",
@@ -4960,7 +4960,7 @@
     "nameSafe": "Ping-Hai",
     "rarity": "Elite",
     "rarityRank": "rarity-c",
-    "faction": "Eastern Radiance",
+    "faction": "Dragon Empery",
     "buildPool": [
       {
         "pool": "Light",
@@ -4979,7 +4979,7 @@
     "nameSafe": "Avrora",
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
-    "faction": "North Union",
+    "faction": "Northern Parliament",
     "buildPool": [
       {
         "pool": "Light",
@@ -8007,7 +8007,7 @@
     "nameSafe": "Grozny",
     "rarity": "Elite",
     "rarityRank": "rarity-c",
-    "faction": "North Union",
+    "faction": "Northern Parliament",
     "buildPool": [
       {
         "pool": "Limited",
@@ -8027,7 +8027,7 @@
     "nameSafe": "Minsk",
     "rarity": "Elite",
     "rarityRank": "rarity-c",
-    "faction": "North Union",
+    "faction": "Northern Parliament",
     "buildPool": [
       {
         "pool": "Exchange",
@@ -8055,7 +8055,7 @@
     "nameSafe": "Tashkent",
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
-    "faction": "North Union",
+    "faction": "Northern Parliament",
     "buildPool": [
       {
         "pool": "Limited",
@@ -8075,7 +8075,7 @@
     "nameSafe": "Pamiat-Merkuria",
     "rarity": "Elite",
     "rarityRank": "rarity-c",
-    "faction": "North Union",
+    "faction": "Northern Parliament",
     "buildPool": [
       {
         "pool": "Limited",
@@ -8095,7 +8095,7 @@
     "nameSafe": "Chapayev",
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
-    "faction": "North Union",
+    "faction": "Northern Parliament",
     "buildPool": [
       {
         "pool": "Limited",
@@ -8128,7 +8128,7 @@
     "nameSafe": "Gangut",
     "rarity": "Elite",
     "rarityRank": "rarity-c",
-    "faction": "North Union",
+    "faction": "Northern Parliament",
     "buildPool": [
       {
         "pool": "Event",
@@ -8153,7 +8153,7 @@
     "nameSafe": "Sovetskaya-Rossiya",
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
-    "faction": "North Union",
+    "faction": "Northern Parliament",
     "buildPool": [
       {
         "pool": "Limited",
@@ -10391,7 +10391,7 @@
     "nameSafe": "Ning-Hai-Retrofit",
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
-    "faction": "Eastern Radiance",
+    "faction": "Dragon Empery",
     "buildPool": [
       {
         "pool": "Other",
@@ -10411,7 +10411,7 @@
     "nameSafe": "Ping-Hai-Retrofit",
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
-    "faction": "Eastern Radiance",
+    "faction": "Dragon Empery",
     "buildPool": [
       {
         "pool": "Other",

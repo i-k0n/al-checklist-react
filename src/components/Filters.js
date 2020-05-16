@@ -74,20 +74,24 @@ const onClick = (filter, type) => {
   if (!type) {
     type = "filters";
   }
+
+  // remove disabled state on Clear Filters button
   const clearFiltersButton = document.getElementById("clear-filters");
+
   if (filter && filter !== " ") {
     clearFiltersButton.classList.remove("disabled");
+
+    const filterElems = document.querySelectorAll(
+      ".ship[data-" + type + "*='" + filter + "']"
+    );
+    const allElems = document.querySelectorAll(".ship");
+    allElems.forEach((el) => {
+      el.classList.remove("show");
+    });
+    filterElems.forEach((el) => {
+      el.classList.add("show");
+    });
   }
-  const filterElems = document.querySelectorAll(
-    ".ship[data-" + type + "*='" + filter + "']"
-  );
-  const allElems = document.querySelectorAll(".ship");
-  allElems.forEach((el) => {
-    el.classList.remove("show");
-  });
-  filterElems.forEach((el) => {
-    el.classList.add("show");
-  });
 };
 
 const clearFilters = () => {
@@ -106,12 +110,14 @@ const clearFilters = () => {
 };
 
 export const Filters = () => {
-  const [textFilter, setTextFilter] = useState(" ");
+  const [textFilter, setTextFilter] = useState("");
 
   const handleChange = (value) => {
-    !value ? (value = " ") : setTextFilter(value);
+    setTextFilter(value);
     console.log(textFilter);
+    // if (textFilter !== "") {
     onClick(textFilter);
+    // }
   };
 
   useEffect(() => {
@@ -179,6 +185,7 @@ export const Filters = () => {
           name="textFilter"
           id="textFilter"
           value={textFilter}
+          placeholder="Search"
           onChange={(e) => {
             e.preventDefault();
             handleChange(e.target.value);

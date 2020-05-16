@@ -177,6 +177,15 @@ label#hide-owned:active::after {
     background-color: #f9f9f9;
 }
 
+#textFilter {
+    font-family: Roboto, sans-serif;
+    padding: 4px 8px 6px;
+    border: 0;
+    border-radius: 0.25em;
+    margin: 8px 0;
+    grid-column: 2 / -2;
+}
+
 .sort-text {
     justify-self: start;
     align-self: center;
@@ -206,21 +215,23 @@ label#hide-owned:active::after {
 .counters {
     font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     font-size: 0.9rem;
-    /* margin: 15px 8% 10px; */
-    /* box-shadow: 0 10px 5px 0 #e0e0e0; */
-    grid-template-columns: repeat(5, 186px);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto 5px;
+    max-width: 940px;
 }
 
 .counter {
     position: relative;
-    display: inline-grid;
     background-color: #f9f9f9;
     border: 1px solid transparent;
     border-radius: 4px;
-    padding: 10px 15px;
+    padding: 8px 16px;
     margin: 5px;
-    justify-items: right;
+    text-align: end;
     font-weight: 500;
+    flex-grow: 1;
+    width: 20%;
 }
 
 .counter::after {
@@ -260,6 +271,10 @@ label#hide-owned:active::after {
 
 .counter.sardegna::after {
     background-image: url(../img/icon-faction-sardegna.png);
+}
+
+.counter.northern::after {
+    background-image: url(../img/icon-faction-northern.png);
 }
 
 .counter.vichya::after {

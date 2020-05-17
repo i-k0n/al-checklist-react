@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
-export default function Card({ ship, index, onClick }) {
+export default function Card({ ship, index }) {
+  const [checked, setChecked] = useState(ship.checked);
+
   let filters = [];
   if (
     ship.classAbbr === "DD" ||
@@ -31,6 +33,48 @@ export default function Card({ ship, index, onClick }) {
   filters.push(ship.collection);
   filters.push(parseInt(ship.id) >= 3005 ? "retrofit" : "");
 
+  const onChange = () => {
+    setChecked(!checked);
+  };
+
+  useEffect(() => {
+    console.log(`${ship.name}: ${index} isChecked: ${checked}`);
+
+    if (checked) {
+      document
+        .querySelector(`.ship[data-id='${ship.id}']`)
+        .classList.add("completed");
+      // $(`.counter.${faction}`).addClass("flash-green");
+      // setTimeout(function() {
+      //     $(`.counter.${faction}`).removeClass("flash-green");
+      // }, 1000);
+      console.log(ship.faction);
+      // add clicked id to obtainedShips array
+      // obtainedShips.push(id);
+      // store array in localStorage
+      // localStorage.setItem("obtainedShips", JSON.stringify(obtainedShips));
+      // console.log("ships array: ", obtainedShips);
+    } else {
+      document
+        .querySelector(`.ship[data-id='${ship.id}']`)
+        .classList.remove("completed");
+      // $(`.counter.${faction}`).addClass("flash-red");
+      // setTimeout(function() {
+      //     $(`.counter.${faction}`).removeClass("flash-red");
+      // }, 1000);
+      //   console.log(name + " lost!")
+      // search obtainedShips array for the clicked id
+      // let i = obtainedShips.indexOf(id);
+      // console.log("ships array: ", obtainedShips);
+      // console.log("localstorage: ", localStorage.obtainedShips);
+      // if (i !== -1) {
+      //     obtainedShips.splice(i, 1);
+      //     localStorage.setItem("obtainedShips", JSON.stringify(obtainedShips));
+      //     console.log("removed");
+      // }
+    }
+  }, [checked]);
+
   return (
     <label
       className="ship show"
@@ -40,13 +84,17 @@ export default function Card({ ship, index, onClick }) {
       data-class={ship.classAbbr}
       data-rarity={ship.rarityRank}
       data-faction={ship.faction}
-      onClick={(e) => {
-        // prevent default event from running render twice
-        e.preventDefault();
-        onClick(ship, index);
-      }}
       data-filters={filters.join(" ").replace(/\s+/g, " ").trim()}>
-      <input type="checkbox" id="188" />
+      <input
+        type="checkbox"
+        id={ship.id}
+        checked={checked}
+        onChange={(e) => {
+          // prevent default event from running render twice
+          // e.preventDefault();
+          onChange();
+        }}
+      />
       <span
         className={`ship-type ${ship.classAbbr.toLowerCase()}`}
         data-title={ship.class}>

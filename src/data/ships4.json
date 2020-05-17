@@ -10,6 +10,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Universal",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -30,6 +31,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Universal",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -50,6 +52,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -75,6 +78,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -99,6 +103,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -123,6 +128,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -148,6 +154,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -172,6 +179,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -196,6 +204,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -220,6 +229,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -244,6 +254,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -269,6 +280,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -293,6 +305,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -317,6 +330,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -341,6 +355,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -365,6 +380,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -384,6 +400,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -408,6 +425,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -433,6 +451,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -457,6 +476,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Exchange",
@@ -476,6 +496,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -508,6 +529,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -540,6 +562,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -564,6 +587,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -596,6 +620,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -620,6 +645,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -652,6 +678,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -676,6 +703,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -704,6 +732,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -728,6 +757,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -753,6 +783,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -781,6 +812,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -806,6 +838,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -834,6 +867,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -862,6 +896,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -890,6 +925,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -918,6 +954,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -946,6 +983,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Event",
@@ -971,6 +1009,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Event",
@@ -996,6 +1035,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Event",
@@ -1021,6 +1061,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -1049,6 +1090,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -1069,6 +1111,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -1093,6 +1136,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -1117,6 +1161,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -1141,6 +1186,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -1165,6 +1211,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -1189,6 +1236,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -1213,6 +1261,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -1237,6 +1286,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -1261,6 +1311,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Exchange",
@@ -1280,6 +1331,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -1299,6 +1351,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -1323,6 +1376,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Exchange",
@@ -1342,6 +1396,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Aviation/Special",
@@ -1366,6 +1421,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Aviation/Special",
@@ -1390,6 +1446,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Aviation/Special",
@@ -1414,6 +1471,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Aviation/Special",
@@ -1438,6 +1496,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Aviation/Special",
@@ -1462,6 +1521,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Aviation/Special",
@@ -1486,6 +1546,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Aviation/Special",
@@ -1510,6 +1571,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Aviation/Special",
@@ -1538,6 +1600,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Aviation/Special",
@@ -1562,6 +1625,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Exchange",
@@ -1581,6 +1645,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Aviation/Special",
@@ -1605,6 +1670,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -1629,6 +1695,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Event",
@@ -1654,6 +1721,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Event",
@@ -1683,6 +1751,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -1707,6 +1776,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -1731,6 +1801,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -1755,6 +1826,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -1779,6 +1851,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -1803,6 +1876,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -1827,6 +1901,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -1851,6 +1926,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -1871,6 +1947,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -1896,6 +1973,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -1916,6 +1994,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Event",
@@ -1940,6 +2019,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -1964,6 +2044,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -1989,6 +2070,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -2008,6 +2090,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -2040,6 +2123,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -2064,6 +2148,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -2096,6 +2181,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -2116,6 +2202,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -2135,6 +2222,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -2155,6 +2243,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -2175,6 +2264,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -2202,6 +2292,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -2229,6 +2320,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -2254,6 +2346,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -2279,6 +2372,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -2298,6 +2392,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -2326,6 +2421,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -2354,6 +2450,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -2382,6 +2479,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -2410,6 +2508,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -2438,6 +2537,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -2466,6 +2566,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -2490,6 +2591,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -2514,6 +2616,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -2538,6 +2641,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -2562,6 +2666,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -2590,6 +2695,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -2614,6 +2720,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -2642,6 +2749,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -2666,6 +2774,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -2690,6 +2799,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -2719,6 +2829,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -2738,6 +2849,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Event",
@@ -2771,6 +2883,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Aviation/Special",
@@ -2795,6 +2908,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Aviation/Special",
@@ -2819,6 +2933,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Aviation/Special",
@@ -2843,6 +2958,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Aviation/Special",
@@ -2871,6 +2987,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -2891,6 +3008,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -2911,6 +3029,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -2945,6 +3064,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -2969,6 +3089,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -2993,6 +3114,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -3012,6 +3134,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -3036,6 +3159,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Exchange",
@@ -3055,6 +3179,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Event",
@@ -3080,6 +3205,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -3105,6 +3231,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -3130,6 +3257,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -3155,6 +3283,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -3180,6 +3309,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -3205,6 +3335,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -3224,6 +3355,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -3249,6 +3381,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -3274,6 +3407,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -3293,6 +3427,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -3312,6 +3447,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -3331,6 +3467,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -3350,6 +3487,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -3369,6 +3507,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -3388,6 +3527,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -3408,6 +3548,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -3428,6 +3569,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -3447,6 +3589,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -3466,6 +3609,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -3491,6 +3635,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -3520,6 +3665,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -3545,6 +3691,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -3564,6 +3711,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -3583,6 +3731,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -3608,6 +3757,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -3633,6 +3783,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -3656,6 +3807,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -3679,6 +3831,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -3704,6 +3857,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -3729,6 +3883,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -3749,6 +3904,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -3781,6 +3937,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -3804,6 +3961,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -3829,6 +3987,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -3854,6 +4013,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Exchange",
@@ -3882,6 +4042,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -3902,6 +4063,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Exchange",
@@ -3926,6 +4088,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -3945,6 +4108,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -3970,6 +4134,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -3995,6 +4160,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -4014,6 +4180,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -4033,6 +4200,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -4053,6 +4221,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Event",
@@ -4078,6 +4247,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -4098,6 +4268,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -4123,6 +4294,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -4148,6 +4320,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -4173,6 +4346,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -4198,6 +4372,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Aviation/Special",
@@ -4218,6 +4393,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -4243,6 +4419,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -4268,6 +4445,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -4293,6 +4471,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -4318,6 +4497,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Aviation/Special",
@@ -4337,6 +4517,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Aviation/Special",
@@ -4356,6 +4537,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Aviation/Special",
@@ -4375,6 +4557,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -4407,6 +4590,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Ironblood",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -4431,6 +4615,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Ironblood",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -4455,6 +4640,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Ironblood",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -4475,6 +4661,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Ironblood",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -4507,6 +4694,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Ironblood",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -4539,6 +4727,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Ironblood",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -4571,6 +4760,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Ironblood",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -4603,6 +4793,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Ironblood",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -4633,6 +4824,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Ironblood",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -4665,6 +4857,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Ironblood",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Event",
@@ -4690,6 +4883,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Ironblood",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -4709,6 +4903,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Ironblood",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Event",
@@ -4738,6 +4933,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Ironblood",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Event",
@@ -4771,6 +4967,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Ironblood",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -4791,6 +4988,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Ironblood",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Exchange",
@@ -4815,6 +5013,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Ironblood",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -4835,6 +5034,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Dragon Empery",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Event",
@@ -4860,6 +5060,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Dragon Empery",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Event",
@@ -4885,6 +5086,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Dragon Empery",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -4904,6 +5106,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Dragon Empery",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -4923,6 +5126,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Dragon Empery",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -4942,6 +5146,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Dragon Empery",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -4961,6 +5166,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Dragon Empery",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -4980,6 +5186,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Northern Parliament",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -5004,6 +5211,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -5023,6 +5231,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Ironblood",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -5043,6 +5252,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Ironblood",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -5063,6 +5273,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Ironblood",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -5083,6 +5294,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Ironblood",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -5103,6 +5315,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -5122,6 +5335,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -5141,6 +5355,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -5160,6 +5375,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -5179,6 +5395,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -5198,6 +5415,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -5223,6 +5441,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -5243,6 +5462,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -5263,6 +5483,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -5288,6 +5509,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -5308,6 +5530,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -5327,6 +5550,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -5352,6 +5576,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -5372,6 +5597,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -5392,6 +5618,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -5417,6 +5644,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -5442,6 +5670,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -5467,6 +5696,7 @@
     "rarity": "Common",
     "rarityRank": "rarity-a",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -5492,6 +5722,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -5517,6 +5748,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -5541,6 +5773,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -5560,6 +5793,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -5579,6 +5813,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -5604,6 +5839,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -5629,6 +5865,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -5649,6 +5886,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -5668,6 +5906,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -5687,6 +5926,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -5707,6 +5947,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -5726,6 +5967,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -5746,6 +5988,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -5771,6 +6014,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -5804,6 +6048,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -5824,6 +6069,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Event",
@@ -5853,6 +6099,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Event",
@@ -5878,6 +6125,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -5898,6 +6146,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -5917,6 +6166,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -5936,6 +6186,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -5956,6 +6207,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -5975,6 +6227,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -5995,6 +6248,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -6015,6 +6269,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Event",
@@ -6039,6 +6294,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -6058,6 +6314,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -6077,6 +6334,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Aviation/Special",
@@ -6096,6 +6354,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Aviation/Special",
@@ -6115,6 +6374,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Aviation/Special",
@@ -6134,6 +6394,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Ironblood",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Aviation/Special",
@@ -6153,6 +6414,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Aviation/Special",
@@ -6172,6 +6434,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Ironblood",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -6192,6 +6455,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Ironblood",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Event",
@@ -6217,6 +6481,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Ironblood",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -6237,6 +6502,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Ironblood",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -6257,6 +6523,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Iris Libre",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Exchange",
@@ -6285,6 +6552,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Iris Libre",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -6305,6 +6573,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Iris Libre",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Event",
@@ -6330,6 +6599,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Iris Libre",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -6350,6 +6620,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Vichya Dominion",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Exchange",
@@ -6378,6 +6649,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Vichya Dominion",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -6398,6 +6670,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Vichya Dominion",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -6418,6 +6691,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -6438,6 +6712,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -6458,6 +6733,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Aviation/Special",
@@ -6477,6 +6753,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -6497,6 +6774,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -6517,6 +6795,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Iris Libre",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -6537,6 +6816,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -6556,6 +6836,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Event",
@@ -6581,6 +6862,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -6600,6 +6882,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -6619,6 +6902,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -6638,6 +6922,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -6658,6 +6943,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -6677,6 +6963,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -6697,6 +6984,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -6717,6 +7005,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -6737,6 +7026,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Event",
@@ -6762,6 +7052,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -6782,6 +7073,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -6801,6 +7093,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -6820,6 +7113,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -6840,6 +7134,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -6860,6 +7155,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -6883,6 +7179,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Event",
@@ -6908,6 +7205,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -6928,6 +7226,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Ironblood",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -6948,6 +7247,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -6973,6 +7273,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -6993,6 +7294,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -7013,6 +7315,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Heavy",
@@ -7037,6 +7340,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Aviation/Special",
@@ -7056,6 +7360,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Ironblood",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Aviation/Special",
@@ -7075,6 +7380,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Ironblood",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -7095,6 +7401,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Ironblood",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -7115,6 +7422,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Ironblood",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -7135,6 +7443,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -7155,6 +7464,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -7174,6 +7484,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -7193,6 +7504,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Event",
@@ -7218,6 +7530,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -7237,6 +7550,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Vichya Dominion",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -7257,6 +7571,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Iris Libre",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -7277,6 +7592,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -7297,6 +7613,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -7317,6 +7634,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -7337,6 +7655,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Ironblood",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -7357,6 +7676,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Ironblood",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -7377,6 +7697,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -7397,6 +7718,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Exchange",
@@ -7425,6 +7747,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Event",
@@ -7450,6 +7773,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Event",
@@ -7475,6 +7799,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -7495,6 +7820,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -7515,6 +7841,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -7534,6 +7861,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -7553,6 +7881,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -7572,6 +7901,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Sardegna Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -7592,6 +7922,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sardegna Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Exchange",
@@ -7620,6 +7951,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sardegna Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -7640,6 +7972,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Sardegna Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -7660,6 +7993,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sardegna Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Event",
@@ -7685,6 +8019,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sardegna Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Event",
@@ -7710,6 +8045,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Ironblood",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Aviation/Special",
@@ -7740,6 +8076,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -7759,6 +8096,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Vichya Dominion",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -7779,6 +8117,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -7799,6 +8138,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -7819,6 +8159,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Event",
@@ -7844,6 +8185,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Ironblood",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -7864,6 +8206,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -7883,6 +8226,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -7903,6 +8247,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -7923,6 +8268,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -7943,6 +8289,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -7963,6 +8310,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Light",
@@ -7983,6 +8331,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Event",
@@ -8008,6 +8357,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Northern Parliament",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -8028,6 +8378,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Northern Parliament",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Exchange",
@@ -8056,6 +8407,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Northern Parliament",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -8076,6 +8428,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Northern Parliament",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -8096,6 +8449,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Northern Parliament",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -8129,6 +8483,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Northern Parliament",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Event",
@@ -8154,6 +8509,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Northern Parliament",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -8174,6 +8530,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -8194,6 +8551,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -8227,6 +8585,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -8247,6 +8606,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -8267,6 +8627,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Event",
@@ -8292,6 +8653,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Exchange",
@@ -8320,6 +8682,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -8340,6 +8703,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -8360,6 +8724,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -8380,6 +8745,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Event",
@@ -8405,6 +8771,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Vichya Dominion",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Event",
@@ -8430,6 +8797,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Neptunia",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Event",
@@ -8455,6 +8823,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Neptunia",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -8475,6 +8844,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Neptunia",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -8495,6 +8865,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Neptunia",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Event",
@@ -8520,6 +8891,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Neptunia",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -8540,6 +8912,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Neptunia",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -8560,6 +8933,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Neptunia",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -8579,6 +8953,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Neptunia",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -8599,6 +8974,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Bilibili",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Event",
@@ -8624,6 +9000,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Bilibili",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Exchange",
@@ -8648,6 +9025,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Utawarerumono",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -8668,6 +9046,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Utawarerumono",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -8688,6 +9067,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Utawarerumono",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -8708,6 +9088,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Utawarerumono",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -8727,6 +9108,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Utawarerumono",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Event",
@@ -8752,6 +9134,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Utawarerumono",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Event",
@@ -8777,6 +9160,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "KizunaAI",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Event",
@@ -8802,6 +9186,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "KizunaAI",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -8822,6 +9207,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "KizunaAI",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -8842,6 +9228,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "KizunaAI",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -8862,6 +9249,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Hololive",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -8882,6 +9270,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Hololive",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -8902,6 +9291,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Hololive",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -8922,6 +9312,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Hololive",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -8942,6 +9333,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Hololive",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Limited",
@@ -8962,6 +9354,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Hololive",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Event",
@@ -8987,6 +9380,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Hololive",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Event",
@@ -9012,6 +9406,7 @@
     "rarity": "Priority",
     "rarityRank": "rarity-f",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9032,6 +9427,7 @@
     "rarity": "Priority",
     "rarityRank": "rarity-f",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9052,6 +9448,7 @@
     "rarity": "Priority",
     "rarityRank": "rarity-f",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9072,6 +9469,7 @@
     "rarity": "Priority",
     "rarityRank": "rarity-f",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9092,6 +9490,7 @@
     "rarity": "Priority",
     "rarityRank": "rarity-f",
     "faction": "Ironblood",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9112,6 +9511,7 @@
     "rarity": "Priority",
     "rarityRank": "rarity-f",
     "faction": "Iris Libre",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9132,6 +9532,7 @@
     "rarity": "Priority",
     "rarityRank": "rarity-f",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9152,6 +9553,7 @@
     "rarity": "Priority",
     "rarityRank": "rarity-f",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9172,6 +9574,7 @@
     "rarity": "Priority",
     "rarityRank": "rarity-f",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9192,6 +9595,7 @@
     "rarity": "Decisive",
     "rarityRank": "rarity-g",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9212,6 +9616,7 @@
     "rarity": "Decisive",
     "rarityRank": "rarity-g",
     "faction": "Ironblood",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9232,6 +9637,7 @@
     "rarity": "Priority",
     "rarityRank": "rarity-f",
     "faction": "Vichya Dominion",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9252,6 +9658,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9272,6 +9679,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9292,6 +9700,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9312,6 +9721,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9332,6 +9742,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9352,6 +9763,7 @@
     "rarity": "Ultra Rare",
     "rarityRank": "rarity-e",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9372,6 +9784,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9392,6 +9805,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9412,6 +9826,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9432,6 +9847,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9452,6 +9868,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9472,6 +9889,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9492,6 +9910,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9512,6 +9931,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9532,6 +9952,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9552,6 +9973,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9572,6 +9994,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9592,6 +10015,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9612,6 +10036,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9632,6 +10057,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9652,6 +10078,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9672,6 +10099,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9692,6 +10120,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9712,6 +10141,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9732,6 +10162,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9752,6 +10183,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9772,6 +10204,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9792,6 +10225,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9812,6 +10246,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9832,6 +10267,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9852,6 +10288,7 @@
     "rarity": "Ultra Rare",
     "rarityRank": "rarity-e",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9872,6 +10309,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9892,6 +10330,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9912,6 +10351,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9932,6 +10372,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9952,6 +10393,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9972,6 +10414,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -9992,6 +10435,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -10012,6 +10456,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -10032,6 +10477,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -10052,6 +10498,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -10072,6 +10519,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -10092,6 +10540,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -10112,6 +10561,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -10132,6 +10582,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -10152,6 +10603,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -10172,6 +10624,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -10192,6 +10645,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -10212,6 +10666,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -10232,6 +10687,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -10252,6 +10708,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -10272,6 +10729,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -10292,6 +10750,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Ironblood",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -10312,6 +10771,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Ironblood",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -10332,6 +10792,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Ironblood",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -10352,6 +10813,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Ironblood",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -10372,6 +10834,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Ironblood",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -10392,6 +10855,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Dragon Empery",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -10412,6 +10876,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Dragon Empery",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -10432,6 +10897,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -10452,6 +10918,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -10472,6 +10939,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -10492,6 +10960,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -10512,6 +10981,7 @@
     "rarity": "Rare",
     "rarityRank": "rarity-b",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -10532,6 +11002,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Eagle Union",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -10552,6 +11023,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -10572,6 +11044,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -10592,6 +11065,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -10612,6 +11086,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Sakura Empire",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -10632,6 +11107,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Iris Libre",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -10652,6 +11128,7 @@
     "rarity": "Super Rare",
     "rarityRank": "rarity-d",
     "faction": "Iris Libre",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -10672,6 +11149,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Vichya Dominion",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -10692,6 +11170,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -10712,6 +11191,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",
@@ -10732,6 +11212,7 @@
     "rarity": "Elite",
     "rarityRank": "rarity-c",
     "faction": "Royal Navy",
+    "checked": false,
     "buildPool": [
       {
         "pool": "Other",

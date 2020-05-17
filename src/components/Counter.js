@@ -50,22 +50,28 @@ const counters = [
 export const Counter = () => {
   const UpdateCounters = (faction) => {
     useEffect(() => {
-      // console.log("faction: ", faction);
-      // console.log(
-      //   document.querySelectorAll('.ship[data-filters*="' + faction + '"]')
-      // );
-      let factionCounter = document.querySelectorAll(
-        '.ship[data-filters*="' + faction + '"]'
-      );
-      // console.log("factionCounter: ", factionCounter);
-      let factionCompleted = document.querySelectorAll(
-        `.ship[data-filters*="${faction}"].completed`
-      );
-      // console.log("factionCompleted: ", factionCompleted);
+      console.log("Counter Render");
+      let factionCounter, factionCompleted;
+      if (faction !== "total") {
+        factionCounter = document.querySelectorAll(
+          '.ship[data-filters*="' + faction + '"]'
+        );
+        factionCompleted = document.querySelectorAll(
+          `.ship[data-filters*="${faction}"].completed`
+        );
+      } else {
+        factionCounter = document.querySelectorAll(
+          '.ship[data-filters]:not([data-filters*="collab"])'
+        );
+        factionCompleted = document.querySelectorAll(
+          '.ship.completed:not([data-filters*="collab"])'
+        );
+      }
+
       document.querySelector(
         "li.counter." + faction + " > span"
       ).textContent = ` ${factionCompleted.length} / ${factionCounter.length}`;
-    }, []);
+    }, [faction]);
   };
 
   return (

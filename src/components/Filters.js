@@ -67,50 +67,54 @@ const rarityFilters = [
   "Retrofit",
 ];
 
-const onClick = (filter, type) => {
-  // console.log(`You clicked the ${filter} button`);
-  // console.log("type: ", type);
-  // console.log(".ship[data-" + type + "*='" + filter + "']");
-  if (!type) {
-    type = "filters";
-  }
-
-  // remove disabled state on Clear Filters button
-  const clearFiltersButton = document.getElementById("clear-filters");
-
-  if (filter && filter !== " ") {
-    clearFiltersButton.classList.remove("disabled");
-
-    const filterElems = document.querySelectorAll(
-      ".ship[data-" + type + "*='" + filter + "']"
-    );
-    const allElems = document.querySelectorAll(".ship");
-    allElems.forEach((el) => {
-      el.classList.remove("show");
-    });
-    filterElems.forEach((el) => {
-      el.classList.add("show");
-    });
-  }
-};
-
-const clearFilters = () => {
-  const clearFiltersButton = document.getElementById("clear-filters");
-  const searchText = document.getElementById("textFilter");
-  const allElems = document.querySelectorAll(".ship");
-
-  searchText.value = " ";
-
-  allElems.forEach((el) => {
-    el.classList.remove("show");
-    el.classList.add("show");
-  });
-
-  clearFiltersButton.classList.add("disabled");
-};
-
 export const Filters = () => {
   const [textFilter, setTextFilter] = useState("");
+  const [filteredShips, setFilteredShips] = useState(null);
+
+  const onClick = (filter, type) => {
+    // console.log(`You clicked the ${filter} button`);
+    // console.log("type: ", type);
+    // console.log(".ship[data-" + type + "*='" + filter + "']");
+    if (!type) {
+      type = "filters";
+    }
+
+    // remove disabled state on Clear Filters button
+    const clearFiltersButton = document.getElementById("clear-filters");
+
+    if (filter && filter !== " ") {
+      clearFiltersButton.classList.remove("disabled");
+
+      const filterElems = document.querySelectorAll(
+        ".ship[data-" + type + "*='" + filter + "']"
+      );
+
+      setFilteredShips(filterElems);
+
+      const allElems = document.querySelectorAll(".ship");
+      allElems.forEach((el) => {
+        el.classList.remove("show");
+      });
+      filterElems.forEach((el) => {
+        el.classList.add("show");
+      });
+    }
+  };
+
+  const clearFilters = () => {
+    const clearFiltersButton = document.getElementById("clear-filters");
+    const searchText = document.getElementById("textFilter");
+    const allElems = document.querySelectorAll(".ship");
+
+    searchText.value = " ";
+
+    allElems.forEach((el) => {
+      el.classList.remove("show");
+      el.classList.add("show");
+    });
+
+    clearFiltersButton.classList.add("disabled");
+  };
 
   const handleChange = (value) => {
     setTextFilter(value);

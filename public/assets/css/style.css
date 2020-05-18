@@ -289,6 +289,7 @@ label#hide-owned:active::after {
     font-size: 1rem;
     font-weight: 400;
     font-family: "Noto Sans", "Roboto", sans-serif;
+    padding-left: 4px;
 }
 
 @keyframes border-flash-green {

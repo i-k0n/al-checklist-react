@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 
-export default function Card({ ship, index, obtainedShipsState }) {
+export default function Card({ ship, index, shipArr }) {
   const cardRef = useRef();
   const [obtainedShips, setObtainedShips] = useState([]);
   const [checked, setChecked] = useState(ship.checked);
-  const shipArr = [];
+
   let filters = [];
   if (
     ship.classAbbr === "DD" ||
@@ -42,33 +42,24 @@ export default function Card({ ship, index, obtainedShipsState }) {
   // useEffect(() => {
   //   console.log(`${ship.name} checked: ${checked}`);
   // }, [checked]);
-
   const onChange = (e) => {
-    console.log(obtainedShipsState);
-    setChecked(e.target.checked);
-  };
+    const { checked } = e.currentTarget;
+    setChecked(checked);
+    // console.log(checked);
+    console.log("ship.id: ", ship.id, typeof ship.id);
+    const i = shipArr.indexOf(ship.id.toString());
 
-  useEffect(() => {
-    // click ship
-    // set clicked ship's class as "completed"
-    // get clicked ship's id
-    // pass that id to an array of ship ids
-    // update state with array of ids
-    // push that state to local storage
-    console.log("use effect ran");
-
-    let i = shipArr.indexOf(ship.id);
     if (checked) {
       // add completed class to .ship label
       document
         .querySelector(`.ship[data-id='${ship.id}']`)
         .classList.add("completed");
-
+      console.log("shipArr index: ", i);
       // console.log(ship.faction);
       // add clicked id to obtainedShips array
       if (i === -1) {
         shipArr.push(ship.id);
-        console.log(`${ship.name} added`);
+        // console.log(`${ship.name} added`);
         console.log("ship array: ", shipArr);
         // setObtainedShips(shipArr);
         // store array in localStorage
@@ -80,10 +71,11 @@ export default function Card({ ship, index, obtainedShipsState }) {
         .querySelector(`.ship[data-id='${ship.id}']`)
         .classList.remove("completed");
 
-      console.log(ship.name + " lost!");
+      // console.log(ship.name + " lost!");
       // search obtainedShips array for the clicked id
       // setObtainedShips(shipArr);
 
+      console.log("shipArr index: ", i);
       console.log("ships array: ", shipArr);
       // console.log("localstorage: ", localStorage.obtainedShips);
       if (i !== -1) {
@@ -95,12 +87,22 @@ export default function Card({ ship, index, obtainedShipsState }) {
     }
 
     console.log(`---------------------`);
-  }, [checked]);
+  };
+
+  // useEffect(() => {
+  //   // click ship
+  //   // set clicked ship's class as "completed"
+  //   // get clicked ship's id
+  //   // pass that id to an array of ship ids
+  //   // update state with array of ids
+  //   // push that state to local storage
+  //   console.log("use effect ran");
+  // }, [checked]);
 
   return (
     <label
       className="ship show"
-      ref={cardRef}
+      htmlFor={ship.id}
       data-id={ship.id}
       data-index={index}
       data-name={ship.name}

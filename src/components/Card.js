@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
-export default function Card({ ship, index }) {
-  const [checked, setChecked] = useState(ship.checked);
+export default function Card({ ship, index, obtainedShipsState }) {
+  const cardRef = useRef();
   const [obtainedShips, setObtainedShips] = useState([]);
-
+  const [checked, setChecked] = useState(ship.checked);
+  const shipArr = [];
   let filters = [];
   if (
     ship.classAbbr === "DD" ||
@@ -34,41 +35,18 @@ export default function Card({ ship, index }) {
   filters.push(ship.collection);
   filters.push(parseInt(ship.id) >= 3005 ? "retrofit" : "");
 
+  // useEffect(() => {
+  //   obtainedShipsSetter(obtainedShips);
+  // }, [obtainedShipsSetter, obtainedShips]);
+
+  // useEffect(() => {
+  //   console.log(`${ship.name} checked: ${checked}`);
+  // }, [checked]);
+
   const onChange = (e) => {
+    console.log(obtainedShipsState);
     setChecked(e.target.checked);
   };
-
-  const loadLocalStorage = () => {
-    // get obtainedShips array from localStorage and load as data
-    // Set() removes any duplicate entries so our array always has unique values
-    let data = Array.from(
-      new Set(JSON.parse(localStorage.getItem("obtainedShips")))
-    );
-    // populate obtainedShips array with localStorage
-    setObtainedShips([...data]);
-    console.log("localStorage data: ", data);
-    // loop through localStorage data
-    for (let i = 0; i < data.length; i++) {
-      // add completed class to ships in array
-      document
-        .querySelector(`.ship[data-id='${data[i]}']`)
-        .classList.add("completed");
-      // get matching inputs and mark as checked
-      document
-        .querySelector('label[data-id="009"] > input')
-        .setAttribute("checked", true);
-    }
-    // console.log('saved ships: ', obtainedShips);
-    console.log("localStorage loaded!");
-  };
-
-  useEffect(() => {
-    loadLocalStorage();
-  }, []);
-
-  useEffect(() => {
-    console.log(`${ship.name} checked: ${checked}`);
-  }, [checked]);
 
   useEffect(() => {
     // click ship
@@ -77,8 +55,8 @@ export default function Card({ ship, index }) {
     // pass that id to an array of ship ids
     // update state with array of ids
     // push that state to local storage
+    console.log("use effect ran");
 
-    const shipArr = [...obtainedShips];
     let i = shipArr.indexOf(ship.id);
     if (checked) {
       // add completed class to .ship label
@@ -90,10 +68,9 @@ export default function Card({ ship, index }) {
       // add clicked id to obtainedShips array
       if (i === -1) {
         shipArr.push(ship.id);
-        setObtainedShips(shipArr);
-        console.log("add: ", ship.name, ship.id);
+        console.log(`${ship.name} added`);
         console.log("ship array: ", shipArr);
-
+        // setObtainedShips(shipArr);
         // store array in localStorage
         localStorage.setItem("obtainedShips", JSON.stringify(shipArr));
       }
@@ -105,22 +82,25 @@ export default function Card({ ship, index }) {
 
       console.log(ship.name + " lost!");
       // search obtainedShips array for the clicked id
+      // setObtainedShips(shipArr);
 
       console.log("ships array: ", shipArr);
       // console.log("localstorage: ", localStorage.obtainedShips);
       if (i !== -1) {
         shipArr.splice(i, 1);
-        setObtainedShips(shipArr);
         localStorage.setItem("obtainedShips", JSON.stringify(shipArr));
         console.log("removed: ", ship.name, ship.id);
         console.log("ship array: ", shipArr);
       }
     }
+
+    console.log(`---------------------`);
   }, [checked]);
 
   return (
     <label
       className="ship show"
+      ref={cardRef}
       data-id={ship.id}
       data-index={index}
       data-name={ship.name}
@@ -131,12 +111,8 @@ export default function Card({ ship, index }) {
       <input
         type="checkbox"
         id={ship.id}
-        checked={checked}
-        onChange={(e) => {
-          // prevent default event from running render twice
-          // e.preventDefault();
-          onChange(e);
-        }}
+        defaultChecked={checked}
+        onChange={(e) => onChange(e)}
       />
       <span
         className={`ship-type ${ship.classAbbr.toLowerCase()}`}

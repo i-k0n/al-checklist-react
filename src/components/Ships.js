@@ -3,7 +3,7 @@ import Card from "./Card";
 
 export const Ships = (props) => {
   const [obtainedShips, setObtainedShips] = useState([]);
-
+  const shipArr = obtainedShips;
   // const wrapperSetObtainedShips = useCallback(
   //   (val) => {
   //     setObtainedShips(val);
@@ -38,7 +38,6 @@ export const Ships = (props) => {
   };
   useEffect(() => {
     loadLocalStorage();
-    console.log(obtainedShips);
   }, []);
 
   return (
@@ -49,7 +48,7 @@ export const Ships = (props) => {
             ship={ship}
             index={index}
             key={index}
-            obtainedShipsState={obtainedShips}
+            shipArr={shipArr}
             // obtainedShipsSetter={wrapperSetObtainedShips}
           />
         );

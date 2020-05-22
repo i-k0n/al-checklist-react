@@ -1,8 +1,6 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 
 export default function Card({ ship, index, shipArr }) {
-  const cardRef = useRef();
-  const [obtainedShips, setObtainedShips] = useState([]);
   const [checked, setChecked] = useState(ship.checked);
 
   let filters = [];
@@ -35,13 +33,6 @@ export default function Card({ ship, index, shipArr }) {
   filters.push(ship.collection);
   filters.push(parseInt(ship.id) >= 3005 ? "retrofit" : "");
 
-  // useEffect(() => {
-  //   obtainedShipsSetter(obtainedShips);
-  // }, [obtainedShipsSetter, obtainedShips]);
-
-  // useEffect(() => {
-  //   console.log(`${ship.name} checked: ${checked}`);
-  // }, [checked]);
   const onChange = (e) => {
     const { checked } = e.currentTarget;
     setChecked(checked);
@@ -55,11 +46,9 @@ export default function Card({ ship, index, shipArr }) {
         .querySelector(`.ship[data-id='${ship.id}']`)
         .classList.add("completed");
       console.log("shipArr index: ", i);
-      // console.log(ship.faction);
       // add clicked id to obtainedShips array
       if (i === -1) {
         shipArr.push(ship.id);
-        // console.log(`${ship.name} added`);
         console.log("ship array: ", shipArr);
         // setObtainedShips(shipArr);
         // store array in localStorage
@@ -70,10 +59,6 @@ export default function Card({ ship, index, shipArr }) {
       document
         .querySelector(`.ship[data-id='${ship.id}']`)
         .classList.remove("completed");
-
-      // console.log(ship.name + " lost!");
-      // search obtainedShips array for the clicked id
-      // setObtainedShips(shipArr);
 
       console.log("shipArr index: ", i);
       console.log("ships array: ", shipArr);
@@ -88,16 +73,6 @@ export default function Card({ ship, index, shipArr }) {
 
     console.log(`---------------------`);
   };
-
-  // useEffect(() => {
-  //   // click ship
-  //   // set clicked ship's class as "completed"
-  //   // get clicked ship's id
-  //   // pass that id to an array of ship ids
-  //   // update state with array of ids
-  //   // push that state to local storage
-  //   console.log("use effect ran");
-  // }, [checked]);
 
   return (
     <label
@@ -125,7 +100,7 @@ export default function Card({ ship, index, shipArr }) {
         className="ship-img rarity-4"
         src="./assets/img/ship-blank.png"
         data-echo={`./img/${ship.id}-${ship.name},jpg`}
-        alt="Mogami"
+        alt={ship.name}
       />
       <div className="ship-info">
         <div className="ship-id-and-ship-type-text">

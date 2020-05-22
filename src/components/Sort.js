@@ -8,6 +8,25 @@ const onClick = () => {
 const sortBy = ["ID", "Name", "Class", "Rarity"];
 
 export const Sort = () => {
+  const onChange = (e) => {
+    const filterElems = document.querySelectorAll(".completed");
+    const allElems = document.querySelectorAll(".ship");
+
+    if (e.target.checked) {
+      // hide obtained ships
+      filterElems.forEach((el) => {
+        el.classList.remove("show");
+      });
+      localStorage.setItem("isHidden", "true");
+    } else {
+      // show all
+      allElems.forEach((el) => {
+        el.classList.add("show");
+      });
+      localStorage.setItem("isHidden", "false");
+    }
+  };
+
   return (
     <div id="sort">
       <p className="sort-text">Sort By: </p>
@@ -22,7 +41,7 @@ export const Sort = () => {
         <span>Collapse&nbsp;Filters</span>
         <img src="./assets/img/collapse-arrow.svg" alt="collaps arrow" />
       </button>
-      <input id="hide-toggle" type="checkbox" />
+      <input id="hide-toggle" type="checkbox" onChange={onChange} />
       <label id="hide-owned" data-filter="completed" htmlFor="hide-toggle">
         Hide Owned
       </label>

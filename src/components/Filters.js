@@ -69,7 +69,9 @@ const rarityFilters = [
 
 export const Filters = () => {
   const [textFilter, setTextFilter] = useState("");
+  /* eslint-disable no-unused-vars */
   const [filteredShips, setFilteredShips] = useState(null);
+  /* eslint-enable no-unused-vars */
 
   const onClick = (filter, type) => {
     // console.log(`You clicked the ${filter} button`);

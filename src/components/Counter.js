@@ -50,7 +50,6 @@ const counters = [
 export const Counter = () => {
   const UpdateCounters = (faction) => {
     useEffect(() => {
-      console.log("Counter Render");
       let factionCounter, factionCompleted;
       if (faction !== "total") {
         factionCounter = document.querySelectorAll(

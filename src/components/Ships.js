@@ -25,7 +25,6 @@ export const Ships = (props) => {
         `label[data-id='${data[i]}'] > input`
       ).checked = true;
     }
-    // console.log('saved ships: ', obtainedShips);
     console.log("localStorage loaded!");
     setObtainedShips([...data]);
     hideIfHidden();

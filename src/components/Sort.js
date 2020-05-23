@@ -8,9 +8,9 @@ const onClick = () => {
 const sortBy = ["ID", "Name", "Class", "Rarity"];
 
 export const Sort = () => {
+  // toggle hiding of obtained ships
   const onChange = (e) => {
     const filterElems = document.querySelectorAll(".completed");
-    const allElems = document.querySelectorAll(".ship");
 
     if (e.target.checked) {
       // hide obtained ships
@@ -19,8 +19,8 @@ export const Sort = () => {
       });
       localStorage.setItem("isHidden", "true");
     } else {
-      // show all
-      allElems.forEach((el) => {
+      // show obtained ships
+      filterElems.forEach((el) => {
         el.classList.add("show");
       });
       localStorage.setItem("isHidden", "false");

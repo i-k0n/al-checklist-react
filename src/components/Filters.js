@@ -83,20 +83,33 @@ export const Filters = () => {
 
     // remove disabled state on Clear Filters button
     const clearFiltersButton = document.getElementById("clear-filters");
+    const hideToggle = document.getElementById("hide-toggle").checked;
+    let filterElems;
 
     if (filter && filter !== " ") {
+      // remove disbale class from clear filters button
       clearFiltersButton.classList.remove("disabled");
 
-      const filterElems = document.querySelectorAll(
-        ".ship[data-" + type + "*='" + filter + "']"
-      );
+      if (hideToggle) {
+        filterElems = document.querySelectorAll(
+          ".ship[data-" + type + "*='" + filter + "']:not(.completed)"
+        );
+        // set filter state to chosen filter
+        setFilteredShips(filterElems);
+      } else {
+        filterElems = document.querySelectorAll(
+          ".ship[data-" + type + "*='" + filter + "']"
+        );
+        // set filter state to chosen filter
+        setFilteredShips(filterElems);
+      }
 
-      setFilteredShips(filterElems);
-
+      // get all elements, then remove show class from them
       const allElems = document.querySelectorAll(".ship");
       allElems.forEach((el) => {
         el.classList.remove("show");
       });
+      // put show class back onto elements that we want filtered
       filterElems.forEach((el) => {
         el.classList.add("show");
       });
@@ -105,17 +118,28 @@ export const Filters = () => {
 
   const clearFilters = () => {
     const clearFiltersButton = document.getElementById("clear-filters");
+    const hideToggle = document.getElementById("hide-toggle").checked;
     const searchText = document.getElementById("textFilter");
     const allElems = document.querySelectorAll(".ship");
+    const unobtainedElems = document.querySelectorAll(".ship:not(.completed)");
 
     searchText.value = " ";
 
-    allElems.forEach((el) => {
-      el.classList.remove("show");
-      el.classList.add("show");
-    });
+    if (hideToggle) {
+      unobtainedElems.forEach((el) => {
+        el.classList.remove("show");
+        el.classList.add("show");
+      });
 
-    clearFiltersButton.classList.add("disabled");
+      clearFiltersButton.classList.add("disabled");
+    } else {
+      allElems.forEach((el) => {
+        el.classList.remove("show");
+        el.classList.add("show");
+      });
+
+      clearFiltersButton.classList.add("disabled");
+    }
   };
 
   const handleChange = (value) => {

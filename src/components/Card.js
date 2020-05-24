@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function Card({ ship, index, shipArr }) {
+export default function Card({ ship, index, shipArr, setFaction }) {
   const [checked, setChecked] = useState(ship.checked);
 
   let filters = [];
@@ -37,7 +37,7 @@ export default function Card({ ship, index, shipArr }) {
     const { checked } = e.currentTarget;
     setChecked(checked);
     // console.log(checked);
-    console.log("ship.id: ", ship.id, typeof ship.id);
+    // console.log("ship.id: ", ship.id, typeof ship.id);
     const i = shipArr.indexOf(ship.id.toString());
 
     if (checked) {
@@ -45,11 +45,11 @@ export default function Card({ ship, index, shipArr }) {
       document
         .querySelector(`.ship[data-id='${ship.id}']`)
         .classList.add("completed");
-      console.log("shipArr index: ", i);
+      // console.log("shipArr index: ", i);
       // add clicked id to obtainedShips array
       if (i === -1) {
         shipArr.push(ship.id);
-        console.log("ship array: ", shipArr);
+        // console.log("ship array: ", shipArr);
         // setObtainedShips(shipArr);
         // store array in localStorage
         localStorage.setItem("obtainedShips", JSON.stringify(shipArr));
@@ -60,18 +60,35 @@ export default function Card({ ship, index, shipArr }) {
         .querySelector(`.ship[data-id='${ship.id}']`)
         .classList.remove("completed");
 
-      console.log("shipArr index: ", i);
-      console.log("ships array: ", shipArr);
+      // console.log("shipArr index: ", i);
+      // console.log("ships array: ", shipArr);
       // console.log("localstorage: ", localStorage.obtainedShips);
       if (i !== -1) {
         shipArr.splice(i, 1);
         localStorage.setItem("obtainedShips", JSON.stringify(shipArr));
-        console.log("removed: ", ship.name, ship.id);
-        console.log("ship array: ", shipArr);
+        // console.log("removed: ", ship.name, ship.id);
+        // console.log("ship array: ", shipArr);
       }
     }
 
     console.log(`---------------------`);
+
+    const clickedFaction = ship.faction.split(" ").shift().toLowerCase();
+    if (
+      clickedFaction !== "neptunia" ||
+      clickedFaction !== "bilibili" ||
+      clickedFaction !== "utawarerumono" ||
+      clickedFaction !== "kizunaai" ||
+      clickedFaction !== "hololive"
+    ) {
+      if (clickedFaction === "universal") {
+        setFaction(["other", Math.random()]);
+      } else {
+        setFaction([clickedFaction, Math.random()]);
+      }
+    } else {
+      setFaction(["total", Math.random()]);
+    }
   };
 
   return (

@@ -31,14 +31,10 @@ export const Ships = (props) => {
   };
 
   const hideIfHidden = () => {
-    console.log("hideIfHidden ran");
+    // console.log("hideIfHidden ran");
     let hideShips = localStorage.getItem("isHidden");
     if (hideShips === "true") {
       document.querySelector("#hide-toggle").checked = true;
-      console.log(
-        "hideToggle checked? ",
-        document.querySelector("#hide-toggle").checked
-      );
       document
         .querySelectorAll(".completed")
         .forEach((ship) => ship.classList.remove("show"));
@@ -51,7 +47,16 @@ export const Ships = (props) => {
   return (
     <div className="ships-container">
       {props.data.map((ship, index) => {
-        return <Card ship={ship} index={index} key={index} shipArr={shipArr} />;
+        return (
+          <Card
+            ship={ship}
+            index={index}
+            key={index}
+            shipArr={shipArr}
+            faction={props.faction}
+            setFaction={props.setFaction}
+          />
+        );
       })}
     </div>
   );

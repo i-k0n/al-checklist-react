@@ -27,6 +27,14 @@ export const Sort = () => {
     }
   };
 
+  const handleSort = (sortType) => {
+    document.querySelectorAll(".ships-container").forEach(card => {
+      card.children.sort(function(a, b){       
+        return (b.attr("data-" + sortType)) < (a.attr("data-" + sortType)) ? 1 : -1
+      });
+    });
+  }
+
   return (
     <div id="sort">
       <p className="sort-text">Sort By: </p>

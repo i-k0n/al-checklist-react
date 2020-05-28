@@ -40,24 +40,27 @@ export const Ships = (props) => {
         .forEach((ship) => ship.classList.remove("show"));
     }
   };
+
   useEffect(() => {
     loadLocalStorage();
   }, []);
 
   return (
     <div className="ships-container">
-      {props.data.map((ship, index) => {
-        return (
-          <Card
-            ship={ship}
-            index={index}
-            key={index}
-            shipArr={shipArr}
-            faction={props.faction}
-            setFaction={props.setFaction}
-          />
-        );
-      })}
+      {props.data
+        .sort((a, b) => a[props.sortType].localeCompare(b[props.sortType]))
+        .map((ship, index) => {
+          return (
+            <Card
+              ship={ship}
+              index={index}
+              key={index}
+              shipArr={shipArr}
+              faction={props.faction}
+              setFaction={props.setFaction}
+            />
+          );
+        })}
     </div>
   );
 };

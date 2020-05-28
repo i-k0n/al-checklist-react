@@ -7,7 +7,7 @@ const onClick = () => {
 
 const sortBy = ["ID", "Name", "Class", "Rarity"];
 
-export const Sort = () => {
+export const Sort = ({ setSortType }) => {
   // toggle hiding of obtained ships
   const onChange = (e) => {
     const filterElems = document.querySelectorAll(".completed");
@@ -27,20 +27,21 @@ export const Sort = () => {
     }
   };
 
-  const handleSort = (sortType) => {
-    document.querySelectorAll(".ships-container").forEach(card => {
-      card.children.sort(function(a, b){       
-        return (b.attr("data-" + sortType)) < (a.attr("data-" + sortType)) ? 1 : -1
-      });
-    });
-  }
+  const onClick = (e) => {
+    const sortProperty = e.target.getAttribute("data-filter");
+    console.log(e.target.getAttribute("data-filter"));
+    setSortType(sortProperty);
+  };
 
   return (
     <div id="sort">
       <p className="sort-text">Sort By: </p>
       {sortBy.map((sort) => {
         return (
-          <SortButton onClick={onClick} sort={sort.toLowerCase()} key={sort}>
+          <SortButton
+            onClick={(e) => onClick(e)}
+            sort={sort.toLowerCase()}
+            key={sort}>
             {sort}
           </SortButton>
         );

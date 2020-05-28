@@ -53,8 +53,9 @@ const counters = [
 ];
 
 function App() {
-  const data = shipsData.default;
+  const [data, setData] = useState(shipsData.default);
   const [faction, setFaction] = useState(["total", Math.random()]);
+  const [sortType, setSortType] = useState("name");
 
   const updateCounters = (shipFaction) => {
     // console.log("faction: ", shipFaction);
@@ -100,11 +101,32 @@ function App() {
     updateCounters(faction);
   });
 
+  useEffect(() => {
+    const sortData = (type) => {
+      const sortProperty = type;
+      console.log("data: ", data);
+      console.log("[...data]: ", [...data]);
+      const sorted = data.sort((a, b) => {
+        if (a[sortProperty] > b[sortProperty]) {
+          return 1;
+        } else if (a[sortProperty] < b[sortProperty]) {
+          return -1;
+        } else {
+          return 0;
+        }
+      });
+      console.log(sorted);
+      setData(sorted);
+    };
+
+    sortData(sortType);
+  }, [sortType]);
+
   return (
     <Fragment>
       <div className="checklist-header">
         <Filters data={data} />
-        <Sort data={data} />
+        <Sort data={data} setSortType={setSortType} />
         <Counter counters={counters} />
       </div>
       <Ships data={data} faction={faction} setFaction={setFaction} />

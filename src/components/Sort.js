@@ -28,7 +28,7 @@ export const Sort = ({ setSortType }) => {
   };
 
   const onClick = (e) => {
-    const sortProperty = e.target.getAttribute("data-filter");
+    let sortProperty = e.target.getAttribute("data-filter");
     console.log(e.target.getAttribute("data-filter"));
     setSortType(sortProperty);
   };
@@ -40,7 +40,8 @@ export const Sort = ({ setSortType }) => {
         return (
           <SortButton
             onClick={(e) => onClick(e)}
-            sort={sort.toLowerCase()}
+            // sort by classAbbr if class is chosen, otherwise sort the chosen method
+            sort={sort === "Class" ? "classAbbr" : sort.toLowerCase()}
             key={sort}>
             {sort}
           </SortButton>

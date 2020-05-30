@@ -55,7 +55,7 @@ const counters = [
 function App() {
   const [data, setData] = useState(shipsData.default);
   const [faction, setFaction] = useState(["total", Math.random()]);
-  const [sortType, setSortType] = useState("name");
+  const [sortType, setSortType] = useState("id");
 
   const updateCounters = (shipFaction) => {
     // console.log("faction: ", shipFaction);

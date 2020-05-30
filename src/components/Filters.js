@@ -70,10 +70,11 @@ const rarityFilters = [
 export const Filters = () => {
   const [textFilter, setTextFilter] = useState("");
   /* eslint-disable no-unused-vars */
-  const [filteredShips, setFilteredShips] = useState(null);
+  const [filteredShips, setFilteredShips] = useState(0);
+  const [totalShips, setTotalShips] = useState(0);
   /* eslint-enable no-unused-vars */
 
-  const onClick = (filter, type) => {
+  const onClick = (e, filter, type) => {
     // console.log(`You clicked the ${filter} button`);
     // console.log("type: ", type);
     // console.log(".ship[data-" + type + "*='" + filter + "']");
@@ -113,6 +114,15 @@ export const Filters = () => {
       filterElems.forEach((el) => {
         el.classList.add("show");
       });
+
+      console.log("filtered ships: ", filteredShips.length);
+    }
+
+    document.querySelectorAll("#type-filters > .button").forEach((button) => {
+      button.classList.remove("is-checked");
+    });
+    if (e.target) {
+      e.target.classList.add("is-checked");
     }
   };
 
@@ -144,9 +154,11 @@ export const Filters = () => {
 
   const handleChange = (value) => {
     setTextFilter(value);
+    const countTotal = document.querySelectorAll(".ship").length;
+    setTotalShips(countTotal);
     console.log(textFilter);
     // if (textFilter !== "") {
-    onClick(textFilter);
+    onClick(value, textFilter);
     // }
   };
 
@@ -178,8 +190,8 @@ export const Filters = () => {
         {typeFilters.map((filter, i) => {
           return (
             <FilterButton
-              onClick={() => {
-                onClick(filter.toUpperCase(), "class");
+              onClick={(e) => {
+                onClick(e, filter.toUpperCase(), "class");
               }}
               dataFilter={filter.toLowerCase()}
               key={filter}>
@@ -221,6 +233,11 @@ export const Filters = () => {
             handleChange(e.target.value);
           }}
         />
+        <span className="showing-results">
+          {textFilter
+            ? `Showing results ${filteredShips.length || 0} / ${totalShips}`
+            : null}
+        </span>
       </div>
     </div>
   );

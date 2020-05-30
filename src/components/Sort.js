@@ -1,10 +1,6 @@
 import React from "react";
 import SortButton from "./SortButton";
 
-const onClick = () => {
-  console.log("You clicked a button");
-};
-
 const sortBy = ["ID", "Name", "Class", "Rarity"];
 
 export const Sort = ({ setSortType }) => {
@@ -31,6 +27,11 @@ export const Sort = ({ setSortType }) => {
     let sortProperty = e.target.getAttribute("data-filter");
     console.log(e.target.getAttribute("data-filter"));
     setSortType(sortProperty);
+
+    document
+      .querySelector("#sort > .is-checked")
+      .classList.remove("is-checked");
+    e.target.classList.add("is-checked");
   };
 
   return (

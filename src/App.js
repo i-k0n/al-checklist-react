@@ -57,6 +57,8 @@ function App() {
   const [faction, setFaction] = useState(["total", Math.random()]);
   const [sortType, setSortType] = useState("id");
 
+  const [currentFilter, setCurrentFilter] = useState("");
+
   const updateCounters = (shipFaction) => {
     // console.log("faction: ", shipFaction);
     // map through counters to see if the faction has a corresponding counter
@@ -104,8 +106,17 @@ function App() {
   return (
     <Fragment>
       <div className="checklist-header">
-        <Filters data={data} />
-        <Sort data={data} setSortType={setSortType} />
+        <Filters
+          data={data}
+          currentFilter={currentFilter}
+          setCurrentFilter={setCurrentFilter}
+        />
+        <Sort
+          data={data}
+          setSortType={setSortType}
+          currentFilter={currentFilter}
+          setCurrentFilter={setCurrentFilter}
+        />
         <Counter counters={counters} />
       </div>
       <Ships

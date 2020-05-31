@@ -75,8 +75,8 @@ export const Filters = () => {
   /* eslint-enable no-unused-vars */
 
   const onClick = (e, filter, type) => {
-    // console.log(`You clicked the ${filter} button`);
-    // console.log("type: ", type);
+    console.log(`You clicked the ${filter} button`);
+    console.log("type: ", type);
     // console.log(".ship[data-" + type + "*='" + filter + "']");
     if (!type) {
       type = "filters";
@@ -118,7 +118,7 @@ export const Filters = () => {
       console.log("filtered ships: ", filteredShips.length);
     }
 
-    document.querySelectorAll("#type-filters > .button").forEach((button) => {
+    document.querySelectorAll(`.filters .button`).forEach((button) => {
       button.classList.remove("is-checked");
     });
     if (e.target) {
@@ -169,11 +169,11 @@ export const Filters = () => {
   return (
     <div className="filters">
       <div id="faction-filters" className="button-container">
-        {factionFilters.map((filter) => {
+        {factionFilters.map((filter, i) => {
           return (
             <FilterButton
-              onClick={() => {
-                onClick(filter.short, "filters");
+              onClick={(e) => {
+                onClick(e, filter.short, "filters");
               }}
               dataFilter={filter.short}
               key={filter.short}>
@@ -204,8 +204,12 @@ export const Filters = () => {
         {rarityFilters.map((filter, i) => {
           return (
             <FilterButton
-              onClick={() => {
-                onClick(filter.replace(/\s+/g, "-").toLowerCase(), "filters");
+              onClick={(e) => {
+                onClick(
+                  e,
+                  filter.replace(/\s+/g, "-").toLowerCase(),
+                  "filters"
+                );
               }}
               dataFilter={filter.replace(/\s+/g, "-").toLowerCase()}
               key={filter}>

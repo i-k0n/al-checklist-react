@@ -67,7 +67,7 @@ const rarityFilters = [
   "Retrofit",
 ];
 
-export const Filters = () => {
+export const Filters = (props) => {
   const [textFilter, setTextFilter] = useState("");
   /* eslint-disable no-unused-vars */
   const [filteredShips, setFilteredShips] = useState(0);
@@ -78,6 +78,9 @@ export const Filters = () => {
     console.log(`You clicked the ${filter} button`);
     console.log("type: ", type);
     // console.log(".ship[data-" + type + "*='" + filter + "']");
+
+    props.setCurrentFilter(filter);
+
     if (!type) {
       type = "filters";
     }
@@ -133,9 +136,13 @@ export const Filters = () => {
     const allElems = document.querySelectorAll(".ship");
     const unobtainedElems = document.querySelectorAll(".ship:not(.completed)");
 
+    // clear currentFilter state
+    props.setCurrentFilter("");
+
     searchText.value = " ";
 
     if (hideToggle) {
+      // show only unobtained ships
       unobtainedElems.forEach((el) => {
         el.classList.remove("show");
         el.classList.add("show");
@@ -143,6 +150,7 @@ export const Filters = () => {
 
       clearFiltersButton.classList.add("disabled");
     } else {
+      // show all ships
       allElems.forEach((el) => {
         el.classList.remove("show");
         el.classList.add("show");

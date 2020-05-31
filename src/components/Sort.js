@@ -3,10 +3,13 @@ import SortButton from "./SortButton";
 
 const sortBy = ["ID", "Name", "Class", "Rarity"];
 
-export const Sort = ({ setSortType }) => {
+export const Sort = ({ setSortType, currentFilter }) => {
   // toggle hiding of obtained ships
   const onChange = (e) => {
+    // get all obtained ships
     const filterElems = document.querySelectorAll(".completed");
+    console.log("current filter is: ", currentFilter);
+    console.log("filterElems: ", filterElems);
 
     if (e.target.checked) {
       // hide obtained ships
@@ -17,7 +20,14 @@ export const Sort = ({ setSortType }) => {
     } else {
       // show obtained ships
       filterElems.forEach((el) => {
-        el.classList.add("show");
+        if (
+          el
+            .getAttribute("data-filters")
+            .indexOf(currentFilter.toLowerCase()) !== -1
+        ) {
+          console.log(el.getAttribute("data-name"));
+          el.classList.add("show");
+        }
       });
       localStorage.setItem("isHidden", "false");
     }

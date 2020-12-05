@@ -415,10 +415,6 @@ label#hide-owned:active::after {
     display: grid;
 }
 
-.completed {
-    opacity: 0.4;
-}
-
 .ship:hover {
     border: 1px solid #aaa;
 }

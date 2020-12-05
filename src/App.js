@@ -1,107 +1,16 @@
-import React, { Fragment, useState, useEffect } from "react";
-import { Filters } from "./components/Filters";
-import { Ships } from "./components/Ships";
-import { Sort } from "./components/Sort";
-import { Counter } from "./components/Counter";
+import React, { Fragment, useState } from "react";
+import Filters from "./components/Filters";
+import Ships from "./components/Ships";
+import Sort from "./components/Sort/Sort";
+import Counter from "./components/Counter";
 import * as shipsData from "./data/ships4.json";
-
-const counters = [
-  {
-    full: "Eagle Union",
-    short: "eagle",
-  },
-  {
-    full: "Royal Navy",
-    short: "royal",
-  },
-  {
-    full: "Sakura Empire",
-    short: "sakura",
-  },
-  {
-    full: "Ironblood",
-    short: "ironblood",
-  },
-  {
-    full: "Dragon Empery",
-    short: "dragon",
-  },
-  {
-    full: "Sardegna Empire",
-    short: "sardegna",
-  },
-  {
-    full: "Northern Parliament",
-    short: "northern",
-  },
-  {
-    full: "Vichya Dominion",
-    short: "vichya",
-  },
-  {
-    full: "Iris Libre",
-    short: "iris",
-  },
-  {
-    full: "Other",
-    short: "other",
-  },
-  {
-    full: "Total",
-    short: "total",
-  },
-];
 
 function App() {
   const [data, setData] = useState(shipsData.default);
-  const [faction, setFaction] = useState(["total", Math.random()]);
+  const [faction, setFaction] = useState("total");
   const [sortType, setSortType] = useState("id");
-
+  const [textFilter, setTextFilter] = useState("");
   const [currentFilter, setCurrentFilter] = useState("");
-
-  const updateCounters = (shipFaction) => {
-    // console.log("faction: ", shipFaction);
-    // map through counters to see if the faction has a corresponding counter
-    var counterArray = counters.map((counter) =>
-      counter.short.indexOf(shipFaction)
-    );
-
-    // check the indices of the new array for the corresponding counter
-    // set it to update the total counter if it doesn't exist
-    counterArray.indexOf(0) === -1 && (shipFaction = "total");
-
-    let factionCounter, factionCompleted;
-    if (shipFaction !== "total") {
-      factionCounter = document.querySelectorAll(
-        '.ship[data-filters*="' + shipFaction + '"]'
-      );
-      factionCompleted = document.querySelectorAll(
-        `.ship[data-filters*="${shipFaction}"].completed`
-      );
-    } else {
-      factionCounter = document.querySelectorAll(
-        '.ship[data-filters]:not([data-filters*="collab"])'
-      );
-      factionCompleted = document.querySelectorAll(
-        '.ship.completed:not([data-filters*="collab"])'
-      );
-    }
-    document.querySelector(
-      "li.counter." + shipFaction + " > span"
-    ).textContent = ` ${factionCompleted.length} / ${factionCounter.length}`;
-  };
-
-  useEffect(() => {
-    // console.log("use effect at start");
-    counters.forEach((faction) => {
-      updateCounters(faction.short);
-    });
-  }, []);
-
-  useEffect(() => {
-    // console.log("use layout effect");
-    updateCounters(faction);
-  });
 
   return (
     <Fragment>
@@ -110,6 +19,8 @@ function App() {
           data={data}
           currentFilter={currentFilter}
           setCurrentFilter={setCurrentFilter}
+          setTextFilter={setTextFilter}
+          textFilter={textFilter}
         />
         <Sort
           data={data}
@@ -117,7 +28,7 @@ function App() {
           currentFilter={currentFilter}
           setCurrentFilter={setCurrentFilter}
         />
-        <Counter counters={counters} />
+        <Counter />
       </div>
       <Ships
         data={data}
@@ -126,6 +37,7 @@ function App() {
         setFaction={setFaction}
         sortType={sortType}
         setSortType={setSortType}
+        textFilter={textFilter}
       />
     </Fragment>
   );

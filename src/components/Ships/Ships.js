@@ -3,31 +3,35 @@ import Card from "./Card";
 
 const Ships = (props) => {
   const [obtainedShips, setObtainedShips] = useState([]);
+  const [checked, setChecked] = useState(null);
   const shipArr = obtainedShips;
+  
 
   const loadLocalStorage = () => {
     // get obtainedShips array from localStorage and load as data
     // Set() removes any duplicate entries so our array always has unique values
-
-    let data = Array.from(
+    console.log("beginning data: ", props.data)
+    let localData = Array.from(
       new Set(JSON.parse(localStorage.getItem("obtainedShips")))
     );
     // populate obtainedShips array with localStorage
-    console.log("localStorage data: ", data);
-    // loop through localStorage data
-    for (let i = 0; i < data.length; i++) {
-      // add completed class to ships in array
-      document
-        .querySelector(`.ship[data-id='${data[i]}']`)
-        .classList.add("completed");
-      // get matching inputs and mark as checked
-      document.querySelector(
-        `label[data-id='${data[i]}'] > input`
-      ).checked = true;
+    console.log("localStorage data: ", localData);
+
+    // put state into new array to manipulate
+    let newArray = [...props.data]
+    
+    // loop through localStorage data and set corresponding ships as checked in new array
+    for (let i = 0; i < localData.length; i++) {
+      const elementsIndex = props.data.findIndex(element => element.id === localData[i])      
+      newArray[elementsIndex] = {...newArray[elementsIndex], checked: true}
     }
-    console.log("localStorage loaded!");
-    setObtainedShips([...data]);
-    hideIfHidden();
+    // update state with localStorage data
+    props.setData(newArray)
+
+    // console.log("newArray: ", newArray)
+    // console.log("localStorage loaded!");
+    setObtainedShips([...localData]);
+    // hideIfHidden();
   };
 
   const hideIfHidden = () => {
@@ -72,6 +76,8 @@ const Ships = (props) => {
               key={ship.id}
               shipArr={shipArr}
               setFaction={props.setFaction}
+              setChecked={setChecked}
+              checked={checked}
             />
           );
         })}

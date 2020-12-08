@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { CardContainer } from "./Card.styles";
 
-const Card = function({ ship, index, shipArr, setFaction }) {
-  const [checked, setChecked] = useState(ship.checked);
-
-  
-
+const Card = function({ ship, index, shipArr, setFaction, checked, setChecked, data, setData }) {
   // build filters array for filtering ships
   let filters = [];
   if (
@@ -40,42 +37,52 @@ const Card = function({ ship, index, shipArr, setFaction }) {
   // handle clicking and unclicking of ships
   const onChange = (e) => {
     const { checked } = e.currentTarget;
+    const id = e.currentTarget.id;
     setChecked(checked);
-
     // console.log(ship.checked);
     // console.log("ship.id: ", ship.id, typeof ship.id);
+    
+
+    // change checked state of currently clicked card
+    const updateData = data.map(element => element.id === id ? {
+      ...element,
+      checked: !element.checked
+    } : element);
+
+    // update state
+    setData(updateData)
+    
     const i = shipArr.indexOf(ship.id.toString());
+    
+    checked && i === -1 ?
+      shipArr.push(ship.id) : 
+      shipArr.splice(i, 1);
 
-    if (checked) {
-      // add completed class to .ship label
-      document
-        .querySelector(`.ship[data-id='${ship.id}']`)
-        .classList.add("completed");
-      // console.log("shipArr index: ", i);
-      // add clicked id to obtainedShips array
-      if (i === -1) {
-        shipArr.push(ship.id);
-        // console.log("ship array: ", shipArr);
-        // setObtainedShips(shipArr);
-        // store array in localStorage
-        localStorage.setItem("obtainedShips", JSON.stringify(shipArr));
-      }
-    } else {
-      // remove completed class from .ship label
-      document
-        .querySelector(`.ship[data-id='${ship.id}']`)
-        .classList.remove("completed");
+    console.log("ship array: ", shipArr)
+    localStorage.setItem("obtainedShips", JSON.stringify(shipArr))
 
-      // console.log("shipArr index: ", i);
-      // console.log("ships array: ", shipArr);
-      // console.log("localstorage: ", localStorage.obtainedShips);
-      if (i !== -1) {
-        shipArr.splice(i, 1);
-        localStorage.setItem("obtainedShips", JSON.stringify(shipArr));
-        // console.log("removed: ", ship.name, ship.id);
-        // console.log("ship array: ", shipArr);
-      }
-    }
+    // if (checked) {
+
+    //   // add clicked id to obtainedShips array
+    //   if (i === -1) {
+    //     shipArr.push(ship.id);
+    //     // console.log("ship array: ", shipArr);
+    //     // setObtainedShips(shipArr);
+    //     // store array in localStorage
+    //     localStorage.setItem("obtainedShips", JSON.stringify(shipArr));
+    //   }
+    // } else {
+
+    //   // console.log("shipArr index: ", i);
+    //   // console.log("ships array: ", shipArr);
+    //   // console.log("localstorage: ", localStorage.obtainedShips);
+    //   if (i !== -1) {
+    //     shipArr.splice(i, 1);
+    //     localStorage.setItem("obtainedShips", JSON.stringify(shipArr));
+    //     // console.log("removed: ", ship.name, ship.id);
+    //     // console.log("ship array: ", shipArr);
+    //   }
+    // }
 
     console.log(`---------------------`);
 
@@ -98,8 +105,8 @@ const Card = function({ ship, index, shipArr, setFaction }) {
   };
 
   return (
-    <label
-      className="ship show"
+    <CardContainer
+      className={`ship show`}
       htmlFor={ship.id}
       data-id={ship.id}
       data-index={index}
@@ -107,12 +114,12 @@ const Card = function({ ship, index, shipArr, setFaction }) {
       data-class={ship.classAbbr}
       data-rarity={ship.rarityRank}
       data-faction={ship.faction}
+      checked={ship.checked}
       data-collection={ship.id.slice(0, 6) === "Collab" ? false : true}
       data-filters={filters.join(" ").replace(/\s+/g, " ").trim()}>
       <input
         type="checkbox"
         id={ship.id}
-        defaultChecked={checked}
         onChange={(e) => onChange(e)}
       />
       <span
@@ -159,7 +166,7 @@ const Card = function({ ship, index, shipArr, setFaction }) {
             : null}
         </div>
       </div>
-    </label>
+    </CardContainer>
   );
 }
 

@@ -36,8 +36,12 @@ const counterData = [
     short: "iris",
   },
   {
-    full: "Other",
-    short: "other",
+    full: "Universal",
+    short: "universal",
+  },
+  {
+    full: "Collab",
+    short: "collab",
   },
   {
     full: "Total",

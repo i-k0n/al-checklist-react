@@ -2,25 +2,36 @@ import React from "react";
 import counterData from "./counterData"
 
 
-const Counter = () => {
+const Counter = ({ data, faction }) => {
+
+  // useEffect(() => {
+  //   console.log("faction: ", faction)
+  // }, [data, faction])
 
   const counters = []; 
   counterData.forEach((counter) => {
-    const currentFaction = counter.short;
+    const currentFaction = counter.full;
     let completed, total;
 
-    if (currentFaction === "total") {
-      completed = document.querySelectorAll(`.ship.completed[data-collection='true']`).length;
-      total = document.querySelectorAll(`.ship[data-collection='true']`).length;
+    if (currentFaction === "Total") {
+      completed = data.filter(ship => ship.collection && ship.checked).length;
+      total = data.filter(ship => ship.collection).length;
+    } else if (currentFaction === "Collab") {
+      completed = data.filter(ship => !ship.collection && ship.checked).length;
+      total = data.filter(ship => !ship.collection).length;
     } else {
-      completed = document.querySelectorAll(`.ship.completed[data-filters*='${currentFaction}']`).length;
-      total = document.querySelectorAll(`.ship[data-filters*='${currentFaction}']`).length;
+      completed = data.filter(ship => ship.faction === currentFaction && ship.collection && ship.checked).length;
+      total = data.filter(ship => ship.faction === currentFaction).length;
     }
 
     // console.log(currentFaction + ": " + completed + " / " + total)
 
     counters.push(
-      <li className={`counter ${counter.short}`} key={counter.full}>
+      <li 
+        className={`counter ${counter.short}`} 
+        key={counter.full}
+        title={counter.full}
+      >
         {counter.full}
         <span>
           {`${completed} / ${total}`}

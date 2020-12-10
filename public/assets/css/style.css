@@ -18,10 +18,6 @@ h4 {
     color: #444;
 }
 
-input[type="checkbox"]:not(#hide-toggle) {
-    display: none;
-}
-
 ul {
     list-style: none;
     padding: 0;
@@ -30,6 +26,10 @@ ul {
 li {
     display: inline-block;
     padding-right: 10px;
+}
+
+.ship input[type="checkbox"] {
+    display: none;
 }
 
 .checklist-header {
@@ -42,7 +42,7 @@ li {
 }
 
 .filters {
-    transition: all 250ms ease-in-out;
+    /* transition: all 250ms ease-in-out; */
     display: grid;
     grid-template-rows: subgrid;
 }
@@ -54,14 +54,13 @@ li {
 .shrink {
     height: 0;
     overflow: hidden;
-    transition: 500ms all ease;
+    /* transition: 500ms all ease; */
 }
 
 #faction-filters,
 #type-filters,
 #rarity-filters,
 #sort,
-.counters,
 .ships-container {
     display: grid;
     justify-content: center;
@@ -81,50 +80,97 @@ li {
     border-bottom: 1px solid #ddd;
 }
 
-input#hide-toggle {
-    width: 0;
-    height: 0;
-    visibility: hidden;
-}
-
-label#hide-owned {
-    cursor: pointer;
-    text-indent: -98px;
-    width: 40px;
-    height: 20px;
-    background: grey;
+.button-toggle {
+    background-color: #f9f9f9;
     display: block;
-    border-radius: 20px;
     position: relative;
-    justify-self: end;
-    align-self: center;
-    font-size: 0.85rem;
-    margin-right: 15px;
+    border: 1px solid #d3d3d3;
+    border-radius: 4px;
+    box-shadow: 0 1px 0px 0px #e7e7e7;
+    margin: 3px 1px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 1.5rem;
+    flex-grow: 1;
+    grid-column: span 2;
 }
 
-label#hide-owned::after {
-    content: "";
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    width: 16px;
-    height: 16px;
-    background-color: #fff;
-    border-radius: 16px;
-    transition: 300ms;
+input#hide-owned-toggle,
+input#hide-collab-toggle {
+  width: 32px;
+  height: 32px;
+  order: 1;
+  z-index: 2;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  visibility: hidden;
 }
 
-input#hide-toggle:checked+label {
-    background-color: #65da55;
+input#hide-owned-toggle:checked ~ label::before,
+input#hide-collab-toggle:checked ~ label::before {
+  transform: translate(-50%, -50%) scale3d(56, 56, 1);
+  opacity: 1;
 }
 
-input#hide-toggle:checked+label:after {
-    left: calc(100% - 2px);
-    transform: translateX(-100%);
+input#hide-owned-toggle:checked ~ label::after,
+input#hide-collab-toggle:checked ~ label::after {
+  background-color: #65da55;
+  border-color: #65da55;
 }
 
-label#hide-owned:active::after {
-    width: 26px;
+label#hide-owned,
+label#hide-collab {
+  padding: 3px 47px 3px 20px;
+  width: 100%;
+  display: block;
+  text-align: left;
+  color: #3c454c;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  transition: color 200ms ease-in;
+  overflow: hidden;
+}
+
+label#hide-owned::before,
+label#hide-collab::before {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  content: "";
+  background-color: #e2e2e2;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale3d(1, 1, 1);
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  z-index: -1;
+}
+
+label#hide-owned::after,
+label#hide-collab::after {
+  width: 20px;
+  height: 20px;
+  content: "";
+  border: 1px solid #ccc;
+  background-color: #fff;
+  background-image: url("../img/check.svg");
+  background-repeat: no-repeat;
+  background-position: 2px 3px;
+  background-size: 1rem;
+  border-radius: 50%;
+  /* box-sizing: border-box; */
+  z-index: 2;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: all 200ms ease-in;
 }
 
 .button-container,
@@ -148,9 +194,11 @@ label#hide-owned:active::after {
 }
 
 .button:hover,
-#collapse-filters:hover {
-    background-color: #e2e2e2;
-    cursor: pointer;
+#collapse-filters:hover,
+#collapse-filters:hover path {
+  fill: #777;
+  color: #777;
+  cursor: pointer;
 }
 
 .button img {
@@ -192,105 +240,54 @@ label#hide-owned:active::after {
     margin-left: 5px;
 }
 
-#collapse-filters {
-    font-size: 0.8rem;
+.collapse-filters-container {
+    width: 50vw;
+    height: 20px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin: 3px auto;
+  }
+  
+  .collapse-filters-container:before {
+    content: "";
+    position: absolute;
+    top: 60%;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #aaa;
+    transform: translateY(-50%);
+  }
+  
+  #collapse-filters {
+    /* font-size: 0.8rem; */
     line-height: 1.5rem;
     display: inline-flex;
     white-space: nowrap;
     padding: 2px 13px;
+    padding-right: 5px;
     margin: 3px 1px;
-    background-color: #f9f9f9;
-    border-radius: 4px;
-    border: 1px solid #d3d3d3;
-    box-shadow: 0 1px 0px 0px #e7e7e7;
+    background-color: #f0f0f0;
+    border: 0;
     justify-self: center;
-}
-
-#collapse-filters img {
-    height: 20px;
-    margin: 2px 0px 0px 10px;
-    transition: 350ms all ease;
-}
-
-.counters {
-    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    font-size: 0.9rem;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto 5px;
-    max-width: 940px;
-}
-
-.counter {
-    position: relative;
-    background-color: #f9f9f9;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    padding: 8px 16px;
-    margin: 5px;
-    text-align: end;
-    font-weight: 500;
-    flex-grow: 1;
-    width: 20%;
-}
-
-.counter::after {
-    content: "";
-    background-repeat: no-repeat;
-    background-position-y: center;
-    background-position-x: 10px;
-    background-size: contain;
-    opacity: 0.12;
     position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
-}
-
-.counter.eagle::after {
-    background-image: url(../img/icon-faction-eagle.png);
-}
-
-.counter.royal::after {
-    background-image: url(../img/icon-faction-royal.png);
-}
-
-.counter.sakura::after {
-    background-image: url(../img/icon-faction-sakura.png);
-}
-
-.counter.ironblood::after {
-    background-image: url(../img/icon-faction-ironblood.png);
-}
-
-.counter.dragon::after {
-    background-image: url(../img/icon-faction-dragon.png);
-}
-
-.counter.sardegna::after {
-    background-image: url(../img/icon-faction-sardegna.png);
-}
-
-.counter.northern::after {
-    background-image: url(../img/icon-faction-northern.png);
-}
-
-.counter.vichya::after {
-    background-image: url(../img/icon-faction-vichya.png);
-}
-
-.counter.iris::after {
-    background-image: url(../img/icon-faction-iris.png);
-}
-
-.counter span {
-    font-size: 1rem;
-    font-weight: 400;
-    font-family: "Noto Sans", "Roboto", sans-serif;
-    padding-left: 4px;
-}
+    bottom: -0.6rem;
+    color: #aaa;
+    letter-spacing: 0.4px;
+    font-weight: 600;
+  }
+  
+  #collapse-filters span {
+    padding-top: 2px;
+  }
+  
+  #collapse-filters svg {
+    color: #aaa;
+    height: 16px;
+    margin: 3px 8px;
+    transition: 350ms all ease;
+    transform: rotate(180deg);
+  }
 
 @keyframes border-flash-green {
     0% {
@@ -404,7 +401,7 @@ label#hide-owned:active::after {
     position: relative;
     cursor: pointer;
     border: 1px solid #e0e0e0;
-    transition: 75ms all ease-in;
+    /* transition: 75ms all ease-in; */
     display: none;
     /* works like magic to auto-adjust the card heights */
     grid-template-rows: auto 1fr;
@@ -528,6 +525,11 @@ label#hide-owned:active::after {
     padding: 0.2em 0;
 }
 
+.ship-rarity-and-ship-faction {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .ship-id,
 .ship-type-text {
     font-size: 0.9375em;
@@ -559,8 +561,7 @@ label#hide-owned:active::after {
 }
 
 @media only screen and (max-width: 928px) {
-    #faction-filters,
-    .counters {
+    #faction-filters {
         grid-template-columns: repeat(auto-fit, 186px);
     }
     #type-filters,
@@ -575,12 +576,6 @@ label#hide-owned:active::after {
     #sort {
         grid-template-columns: max-content repeat( 4, [col-start] minmax(93px, 170px) [col-end]);
         grid-template-areas: "sort-text id name class rarity" "collapse-filters collapse-filters collapse-filters toggle owned";
-    }
-    .counter {
-        display: inline-block;
-        padding: 5px 9px;
-        text-align: right;
-        font-size: 0.8rem;
     }
     .counter::after {
         background-position-y: -5px;
@@ -597,8 +592,7 @@ label#hide-owned:active::after {
 }
 
 @media only screen and (max-width: 749px) {
-    #faction-filters,
-    .counters {
+    #faction-filters {
         grid-template-columns: repeat(3, 186px);
     }
     #type-filters,
@@ -613,17 +607,13 @@ label#hide-owned:active::after {
         grid-template-areas: "sort-text id name class rarity" "collapse-filters collapse-filters collapse-filters toggle owned";
         justify-self: center;
     }
-    .counter {
-        padding: 6px 10px;
-    }
     .counter span {
         font-size: 0.8rem;
     }
 }
 
 @media only screen and (max-width: 559px) {
-    #faction-filters,
-    .counters {
+    #faction-filters {
         grid-template-columns: repeat(2, 186px);
     }
     #type-filters,
@@ -650,15 +640,11 @@ label#hide-owned:active::after {
     .counter.ironblood,
     .counter.dragon,
     .counter.sardegna,
+    .counter.northern,
     .counter.vichya,
     .counter.iris,
-    .counter.other {
+    .counter.universal,
+    .counter.collab {
         display: none;
-    }
-    .counter.total {
-        grid-column-start: span 2;
-        display: inline-block;
-        text-align: end;
-        padding: 5px 10px 6px;
     }
 }

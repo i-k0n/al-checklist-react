@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { FilterButton } from "./FilterButton";
+import { FiltersContainer } from "./Filters.styles";
 import SearchFilter from "./SearchFilter";
 
 const factionFilters = [
@@ -74,7 +75,14 @@ const Filters = (props) => {
   /* eslint-disable no-unused-vars */
   const [filteredShips, setFilteredShips] = useState(0);
   const [totalShips, setTotalShips] = useState(0);
+  const [height, setHeight] = useState("0px")
+
+  const content = useRef(null)
   /* eslint-enable no-unused-vars */
+
+  useEffect(() => {
+    setHeight(!props.collapseFilters ? "0px" : `${content.current.scrollHeight}px`)
+  }, [props.collapseFilters])
 
   // const onClick = (e, filter, type) => {
   //   // console.log(`You clicked the ${filter} button`);
@@ -167,7 +175,12 @@ const Filters = (props) => {
   // }, [props.textFilter]);
 
   return (
-    <div className="filters">
+    <FiltersContainer 
+      className="filters"
+      collapseFilters={props.collapseFilters}
+      ref={content}
+      heightProp={height}
+    >
       {/* <div id="faction-filters" className="button-container">
         {factionFilters.map((filter, i) => {
           return (
@@ -234,7 +247,7 @@ const Filters = (props) => {
           filteredShips={filteredShips}
         />
       </div>
-    </div>
+    </FiltersContainer>
   );
 };
 

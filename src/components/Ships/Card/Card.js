@@ -115,7 +115,7 @@ const Card = function({ ship, index, shipArr, setFaction, checked, setChecked, d
       data-rarity={ship.rarityRank}
       data-faction={ship.faction}
       checked={ship.checked}
-      data-collection={ship.id.slice(0, 6) === "Collab" ? false : true}
+      // data-collection={ship.id.slice(0, 6) === "Collab" ? false : true}
       data-filters={filters.join(" ").replace(/\s+/g, " ").trim()}>
       <input
         type="checkbox"

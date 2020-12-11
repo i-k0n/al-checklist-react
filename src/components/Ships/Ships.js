@@ -31,18 +31,11 @@ const Ships = (props) => {
     // console.log("newArray: ", newArray)
     // console.log("localStorage loaded!");
     setObtainedShips([...localData]);
-    // hideIfHidden();
-  };
 
-  const hideIfHidden = () => {
-    // console.log("hideIfHidden ran");
-    let hideShips = localStorage.getItem("isHidden");
-    if (hideShips === "true") {
-      document.querySelector("#hide-toggle").checked = true;
-      document
-        .querySelectorAll(".completed")
-        .forEach((ship) => ship.classList.remove("show"));
-    }
+    // load state of hideOwned from localStorage
+    const isHidden = JSON.parse(localStorage.getItem("isHidden"));
+    console.log("isHidden: ", localStorage.getItem("isHidden"))
+    props.setHideOwned(isHidden);
   };
 
   useEffect(() => {
@@ -56,6 +49,20 @@ const Ships = (props) => {
           // show only the ships that match the search filter
           if (ship.name.toLowerCase().includes(props.textFilter)) {
             return ship;
+          }
+        })
+        .filter(ship => {
+          if (!props.hideCollab) {
+            return ship
+          } else {
+            return ship.collection
+          }
+        })
+        .filter(ship => {
+          if (!props.hideOwned) {
+            return ship
+          } else {
+            return !ship.checked
           }
         })
         .sort((a, b) => {

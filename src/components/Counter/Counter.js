@@ -1,12 +1,9 @@
 import React from "react";
-import counterData from "./counterData"
+import counterData from "./counterData";
+import { CounterContainer, CounterItem } from "./Counter.styles";
 
 
-const Counter = ({ data, faction }) => {
-
-  // useEffect(() => {
-  //   console.log("faction: ", faction)
-  // }, [data, faction])
+const Counter = ({ data }) => {
 
   const counters = []; 
   counterData.forEach((counter) => {
@@ -27,23 +24,24 @@ const Counter = ({ data, faction }) => {
     // console.log(currentFaction + ": " + completed + " / " + total)
 
     counters.push(
-      <li 
-        className={`counter ${counter.short}`} 
+      <CounterItem 
+        className={`counter ${counter.short}`}
+        faction={counter.short}
         key={counter.full}
         title={counter.full}
       >
         {counter.full}
         <span>
-          {`${completed} / ${total}`}
+          {` ${completed} / ${total}`}
         </span>
-      </li>
+      </CounterItem>
     )
   })
 
   return (
-    <ul className="counters">
+    <CounterContainer className="counters">
       {counters}
-    </ul>
+    </CounterContainer>
   );
 };
 

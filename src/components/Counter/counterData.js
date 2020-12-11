@@ -24,16 +24,16 @@ const counterData = [
     short: "sardegna",
   },
   {
-    full: "Northern Parliament",
-    short: "northern",
-  },
-  {
     full: "Vichya Dominion",
     short: "vichya",
   },
   {
     full: "Iris Libre",
     short: "iris",
+  },
+  {
+    full: "Northern Parliament",
+    short: "northern",
   },
   {
     full: "Universal",

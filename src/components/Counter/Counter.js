@@ -3,7 +3,7 @@ import counterData from "./counterData";
 import { CounterContainer, CounterItem } from "./Counter.styles";
 
 
-const Counter = ({ data }) => {
+const Counter = ({ data, forwardedRef }) => {
 
   const counters = []; 
   counterData.forEach((counter) => {
@@ -13,6 +13,7 @@ const Counter = ({ data }) => {
     if (currentFaction === "Total") {
       completed = data.filter(ship => ship.collection && ship.checked).length;
       total = data.filter(ship => ship.collection).length;
+      total +=  ` (${((completed / total) * 100).toFixed(1)}%)`;
     } else if (currentFaction === "Collab") {
       completed = data.filter(ship => !ship.collection && ship.checked).length;
       total = data.filter(ship => !ship.collection).length;
@@ -39,7 +40,7 @@ const Counter = ({ data }) => {
   })
 
   return (
-    <CounterContainer className="counters">
+    <CounterContainer className="counters" ref={forwardedRef}>
       {counters}
     </CounterContainer>
   );

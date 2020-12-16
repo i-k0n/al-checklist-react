@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Card from "./Card";
+import { ShipsContainer } from "./Ships.styles";
 
 const Ships = (props) => {
   const [obtainedShips, setObtainedShips] = useState([]);
@@ -10,7 +11,7 @@ const Ships = (props) => {
   const loadLocalStorage = () => {
     // get obtainedShips array from localStorage and load as data
     // Set() removes any duplicate entries so our array always has unique values
-    console.log("beginning data: ", props.data)
+    // console.log("beginning data: ", props.data)
     let localData = Array.from(
       new Set(JSON.parse(localStorage.getItem("obtainedShips")))
     );
@@ -29,48 +30,82 @@ const Ships = (props) => {
     props.setData(newArray)
 
     // console.log("newArray: ", newArray)
-    // console.log("localStorage loaded!");
+    console.log("localStorage loaded!");
     setObtainedShips([...localData]);
 
     // load state of hideOwned from localStorage
     const isHidden = JSON.parse(localStorage.getItem("isHidden"));
-    console.log("isHidden: ", localStorage.getItem("isHidden"))
+    // console.log("isHidden: ", localStorage.getItem("isHidden"))
     props.setHideOwned(isHidden);
   };
 
   useEffect(() => {
     loadLocalStorage();
+    // eslint-disable-next-line
   }, []);
 
   return (
-    <div className="ships-container">
+    <ShipsContainer className="ships-container">
       {props.data
         .filter((ship) => {
           // show only the ships that match the search filter
           if (ship.name.toLowerCase().includes(props.textFilter)) {
             return ship;
+          } else {
+            return null;
           }
         })
-        .filter(ship => {
+        .filter((ship) => {
+          //* faction filters
+          if (props.factionFilter.length) {
+            return props.factionFilter.some(faction => {
+              return ship.faction === faction;
+            })
+          } else {
+            return ship
+          }
+        })
+        .filter((ship) => {
+          //* type filters
+          if (props.typeFilter.length) {
+            return props.typeFilter.some(type => {
+              return ship.classAbbr === type;
+            })
+          } else {
+            return ship
+          }
+        })
+        .filter((ship) => {
+          //* rarity filters
+          if (props.rarityFilter.length) {
+            return props.rarityFilter.some(rarity => {
+              return ship.rarity === rarity;
+            })
+          } else {
+            return ship
+          }
+        })
+        .filter((ship) => {
           if (!props.hideCollab) {
-            return ship
+            return ship;
           } else {
-            return ship.collection
+            return ship.collection;
           }
         })
-        .filter(ship => {
+        .filter((ship) => {
           if (!props.hideOwned) {
-            return ship
+            return ship;
           } else {
-            return !ship.checked
+            return !ship.checked;
           }
         })
         .sort((a, b) => {
           if (props.sortType === "map" || props.sortType === "id") {
-            return parseFloat(a[props.sortType]) - parseFloat(b[props.sortType])
-          }
-          else {
-            return a[props.sortType] > b[props.sortType] ? 1 : -1
+            return (
+              parseFloat(a[props.sortType]) - parseFloat(b[props.sortType])
+            );
+          } else {
+            return a[props.sortType] > b[props.sortType] ? 1 : -1;
           }
         })
         .map((ship, index) => {
@@ -88,7 +123,7 @@ const Ships = (props) => {
             />
           );
         })}
-    </div>
+    </ShipsContainer>
   );
 };
 

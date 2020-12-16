@@ -559,7 +559,7 @@
         "time": "01:05:00"
       },
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "01:05:00"
       }
     ],
@@ -593,7 +593,7 @@
         "time": "01:05:00"
       },
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "01:05:00"
       }
     ],
@@ -653,7 +653,7 @@
         "time": "01:15:00"
       },
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "01:15:00"
       }
     ],
@@ -713,7 +713,7 @@
         "time": "01:10:00"
       },
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "01:10:00"
       }
     ],
@@ -852,7 +852,7 @@
         "time": "01:20:00"
       },
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "01:20:00"
       }
     ],
@@ -909,7 +909,7 @@
         "time": "01:40:00"
       },
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "01:40:00"
       }
     ],
@@ -939,7 +939,7 @@
         "time": "01:40:00"
       },
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "01:40:00"
       }
     ],
@@ -969,7 +969,7 @@
         "time": "01:40:00"
       },
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "01:40:00"
       }
     ],
@@ -999,7 +999,7 @@
         "time": "01:50:00"
       },
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "01:50:00"
       }
     ],
@@ -1029,7 +1029,7 @@
         "time": "01:50:00"
       },
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "01:50:00"
       }
     ],
@@ -1140,7 +1140,7 @@
         "time": "02:30:00"
       },
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "02:30:00"
       }
     ],
@@ -1480,7 +1480,7 @@
     "collection": true,
     "buildPool": [
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "02:15:00"
       }
     ],
@@ -1506,7 +1506,7 @@
     "collection": true,
     "buildPool": [
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "02:20:00"
       }
     ],
@@ -1532,7 +1532,7 @@
     "collection": true,
     "buildPool": [
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "02:00:00"
       }
     ],
@@ -1558,7 +1558,7 @@
     "collection": true,
     "buildPool": [
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "03:40:00"
       }
     ],
@@ -1584,7 +1584,7 @@
     "collection": true,
     "buildPool": [
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "03:40:00"
       }
     ],
@@ -1610,7 +1610,7 @@
     "collection": true,
     "buildPool": [
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "02:40:00"
       }
     ],
@@ -1636,7 +1636,7 @@
     "collection": true,
     "buildPool": [
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "04:20:00"
       }
     ],
@@ -1662,7 +1662,7 @@
     "collection": true,
     "buildPool": [
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "04:20:00"
       },
       {
@@ -1692,7 +1692,7 @@
     "collection": true,
     "buildPool": [
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "04:20:00"
       }
     ],
@@ -1744,7 +1744,7 @@
     "collection": true,
     "buildPool": [
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "02:00:00"
       }
     ],
@@ -2219,7 +2219,7 @@
         "time": "01:15:00"
       },
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "01:15:00"
       }
     ],
@@ -2279,7 +2279,7 @@
         "time": "01:15:00"
       },
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "01:15:00"
       }
     ],
@@ -2399,7 +2399,7 @@
         "time": "01:25:00"
       },
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "01:25:00"
       }
     ],
@@ -2428,7 +2428,7 @@
         "time": "01:25:00"
       },
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "01:25:00"
       }
     ],
@@ -2528,7 +2528,7 @@
         "time": "01:30:00"
       },
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "01:30:00"
       }
     ],
@@ -2558,7 +2558,7 @@
         "time": "01:30:00"
       },
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "01:30:00"
       }
     ],
@@ -2588,7 +2588,7 @@
         "time": "01:30:00"
       },
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "01:30:00"
       }
     ],
@@ -2618,7 +2618,7 @@
         "time": "01:30:00"
       },
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "01:30:00"
       }
     ],
@@ -2648,7 +2648,7 @@
         "time": "01:30:00"
       },
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "01:30:00"
       }
     ],
@@ -2678,7 +2678,7 @@
         "time": "01:30:00"
       },
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "01:30:00"
       }
     ],
@@ -3024,7 +3024,7 @@
     "collection": true,
     "buildPool": [
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "02:10:00"
       }
     ],
@@ -3050,7 +3050,7 @@
     "collection": true,
     "buildPool": [
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "02:30:00"
       }
     ],
@@ -3098,7 +3098,7 @@
     "collection": true,
     "buildPool": [
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "04:00:00"
       }
     ],
@@ -3124,7 +3124,7 @@
     "collection": true,
     "buildPool": [
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "04:30:00"
       },
       {
@@ -3997,7 +3997,7 @@
         "time": "01:30:00"
       },
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "01:30:00"
       }
     ],
@@ -4022,7 +4022,7 @@
         "time": "01:30:00"
       },
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "01:30:00"
       }
     ],
@@ -4123,7 +4123,7 @@
         "time": "02:05:00"
       },
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "02:05:00"
       },
       {
@@ -4157,7 +4157,7 @@
         "time": "02:05:00"
       },
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "02:05:00"
       }
     ],
@@ -4649,7 +4649,7 @@
     "collection": true,
     "buildPool": [
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "eventName": "The Solomon Ranger",
         "time": "02:22:00"
       }
@@ -4779,7 +4779,7 @@
     "collection": true,
     "buildPool": [
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "04:30:00"
       }
     ],
@@ -4800,7 +4800,7 @@
     "collection": true,
     "buildPool": [
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "04:30:00"
       }
     ],
@@ -4821,7 +4821,7 @@
     "collection": true,
     "buildPool": [
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "04:45:00"
       }
     ],
@@ -4868,7 +4868,7 @@
         "time": "01:35:00"
       },
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "01:35:00"
       }
     ],
@@ -4979,7 +4979,7 @@
         "time": "01:10:00"
       },
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "01:10:00"
       }
     ],
@@ -5013,7 +5013,7 @@
         "time": "01:10:00"
       },
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "01:10:00"
       }
     ],
@@ -5047,7 +5047,7 @@
         "time": "01:10:00"
       },
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "01:10:00"
       }
     ],
@@ -5081,7 +5081,7 @@
         "time": "01:20:00 "
       },
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "01:20:00"
       }
     ],
@@ -5141,7 +5141,7 @@
         "time": "02:00:00"
       },
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "02:00:00"
       },
       {
@@ -6709,7 +6709,7 @@
     "collection": true,
     "buildPool": [
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "00:30:00"
       }
     ],
@@ -6730,7 +6730,7 @@
     "collection": true,
     "buildPool": [
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "00:30:00"
       }
     ],
@@ -6751,7 +6751,7 @@
     "collection": true,
     "buildPool": [
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "00:30:00"
       }
     ],
@@ -6772,7 +6772,7 @@
     "collection": true,
     "buildPool": [
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "00:12:00"
       }
     ],
@@ -6793,7 +6793,7 @@
     "collection": true,
     "buildPool": [
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "00:24:00"
       }
     ],
@@ -7124,7 +7124,7 @@
     "collection": true,
     "buildPool": [
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "03:00:00"
       }
     ],
@@ -7567,7 +7567,7 @@
         "time": "02:20:00"
       },
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "02:20:00"
       }
     ],
@@ -7734,7 +7734,7 @@
         "time": "04:05:00"
       },
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "eventName": "",
         "time": "04:05:00"
       }
@@ -7756,7 +7756,7 @@
     "collection": true,
     "buildPool": [
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "04:35:00"
       }
     ],
@@ -7777,7 +7777,7 @@
     "collection": true,
     "buildPool": [
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "time": "04:30:00"
       }
     ],
@@ -8494,7 +8494,7 @@
     "collection": true,
     "buildPool": [
       {
-        "pool": "Aviation/Special",
+        "pool": "Special",
         "eventName": "Jaws and Enigma",
         "time": "00:11:00"
       },

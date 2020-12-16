@@ -1,5 +1,5 @@
 import React from "react";
-import { HideButtonLabel } from "./Sort.styles";
+import { HideButtonLabel, SortText } from "./Sort.styles";
 import SortButton from "./SortButton";
 
 const sortBy = ["ID", "Name", "Class", "Rarity", "Map"];
@@ -62,7 +62,7 @@ const Sort = ({ setSortType, currentFilter, hideCollab, setHideCollab, hideOwned
 
   return (
     <div id="sort">
-      <p className="sort-text">Sort By: </p>
+      <SortText className="sort-text">Sort By: </SortText>
       {sortBy.map((sort) => {
         return (
           <SortButton
@@ -74,13 +74,13 @@ const Sort = ({ setSortType, currentFilter, hideCollab, setHideCollab, hideOwned
       })}
       <div className="button-toggle">
         <input id="hide-collab-toggle" type="checkbox" onChange={onHideCollabChange} />
-        <HideButtonLabel id="hide-collab" data-filter="completed" htmlFor="hide-collab-toggle">
+        <HideButtonLabel id="hide-collab" data-filter="completed" htmlFor="hide-collab-toggle" isHidden={hideCollab}>
           Hide Collab
         </HideButtonLabel>
       </div>
       <div className="button-toggle">
         <input id="hide-owned-toggle" type="checkbox" onChange={onHideOwnedChange} />
-        <HideButtonLabel id="hide-owned" data-filter="completed" htmlFor="hide-owned-toggle">
+        <HideButtonLabel id="hide-owned" data-filter="completed" htmlFor="hide-owned-toggle" isHidden={hideOwned}>
           Hide Owned
         </HideButtonLabel>
       </div>

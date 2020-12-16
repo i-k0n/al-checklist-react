@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { CardContainer } from "./Card.styles";
 
 const Card = function({ ship, index, shipArr, setFaction, checked, setChecked, data, setData }) {
@@ -52,56 +52,35 @@ const Card = function({ ship, index, shipArr, setFaction, checked, setChecked, d
     // update state
     setData(updateData)
     
+    // get index of clicked ship
     const i = shipArr.indexOf(ship.id.toString());
     
+    // if ship exists in the array already, remove it, otherwise add it
     checked && i === -1 ?
       shipArr.push(ship.id) : 
       shipArr.splice(i, 1);
 
-    console.log("ship array: ", shipArr)
+    // console.log("ship array: ", shipArr)
     localStorage.setItem("obtainedShips", JSON.stringify(shipArr))
 
-    // if (checked) {
-
-    //   // add clicked id to obtainedShips array
-    //   if (i === -1) {
-    //     shipArr.push(ship.id);
-    //     // console.log("ship array: ", shipArr);
-    //     // setObtainedShips(shipArr);
-    //     // store array in localStorage
-    //     localStorage.setItem("obtainedShips", JSON.stringify(shipArr));
+    // update faction state with the faction of the clicked ship
+    // for updating counters or for the faction counter animation
+    // const clickedFaction = ship.faction.split(" ").shift().toLowerCase();
+    // if (
+    //   clickedFaction !== "neptunia" ||
+    //   clickedFaction !== "bilibili" ||
+    //   clickedFaction !== "utawarerumono" ||
+    //   clickedFaction !== "kizunaai" ||
+    //   clickedFaction !== "hololive"
+    // ) {
+    //   if (clickedFaction === "universal") {
+    //     setFaction("other");
+    //   } else {
+    //     setFaction(clickedFaction);
     //   }
     // } else {
-
-    //   // console.log("shipArr index: ", i);
-    //   // console.log("ships array: ", shipArr);
-    //   // console.log("localstorage: ", localStorage.obtainedShips);
-    //   if (i !== -1) {
-    //     shipArr.splice(i, 1);
-    //     localStorage.setItem("obtainedShips", JSON.stringify(shipArr));
-    //     // console.log("removed: ", ship.name, ship.id);
-    //     // console.log("ship array: ", shipArr);
-    //   }
+    //   setFaction("total");
     // }
-
-    console.log(`---------------------`);
-
-    const clickedFaction = ship.faction.split(" ").shift().toLowerCase();
-    if (
-      clickedFaction !== "neptunia" ||
-      clickedFaction !== "bilibili" ||
-      clickedFaction !== "utawarerumono" ||
-      clickedFaction !== "kizunaai" ||
-      clickedFaction !== "hololive"
-    ) {
-      if (clickedFaction === "universal") {
-        setFaction("other");
-      } else {
-        setFaction(clickedFaction);
-      }
-    } else {
-      setFaction("total");
-    }
   };
 
   return (

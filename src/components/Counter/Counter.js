@@ -1,6 +1,6 @@
 import React from "react";
 import counterData from "./counterData";
-import { CounterContainer, CounterItem } from "./Counter.styles";
+import { CounterContainer, CounterItem, FactionName } from "./Counter.styles";
 
 
 const Counter = ({ data, forwardedRef }) => {
@@ -31,10 +31,10 @@ const Counter = ({ data, forwardedRef }) => {
         key={counter.full}
         title={counter.full}
       >
-        {counter.full}
-        <span>
-          {` ${completed} / ${total}`}
-        </span>
+        <FactionName>
+          {counter.full}
+        </FactionName>
+        {` ${completed} / ${total}`}
       </CounterItem>
     )
   })

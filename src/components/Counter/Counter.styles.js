@@ -17,7 +17,8 @@ const CounterItem = styled.li`
   padding: 8px 16px;
   margin: 5px;
   text-align: end;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: normal;
   flex-grow: 1;
   white-space: nowrap;
 
@@ -49,4 +50,9 @@ const CounterItem = styled.li`
   }
 `;
 
-export { CounterContainer, CounterItem };
+const FactionName = styled.span`
+  font-weight: 500;
+  font-size: 13px;
+`;
+
+export { CounterContainer, CounterItem, FactionName };

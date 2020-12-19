@@ -79,6 +79,18 @@ const Ships = (props) => {
           //* rarity filters
           if (props.rarityFilter.length) {
             return props.rarityFilter.some(rarity => {
+              if (rarity === "Collab") {
+                return !ship.collection
+              }
+              if (rarity === "Retrofit") {
+                return ship.id > 3000
+              }
+              if (rarity === "Drop Only") {
+                return ship.buildPool[0].eventName === "Drop Only"
+              }
+              if (rarity === "Drops") {
+                return ship.acquisition[0]?.task === "Drops from "
+              }
               return ship.rarity === rarity;
             })
           } else {
@@ -100,9 +112,13 @@ const Ships = (props) => {
           }
         })
         .sort((a, b) => {
-          if (props.sortType === "map" || props.sortType === "id") {
+          if (props.sortType === "id") {
             return (
               parseFloat(a[props.sortType]) - parseFloat(b[props.sortType])
+            );
+          } else if (props.sortType === "map") {
+            return (
+              parseFloat(a.acquisition[0]?.req) - parseFloat(b.acquisition[0]?.req)
             );
           } else {
             return a[props.sortType] > b[props.sortType] ? 1 : -1;

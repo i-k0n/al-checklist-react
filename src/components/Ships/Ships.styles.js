@@ -11,7 +11,11 @@ const ShipsContainer = styled.div`
   }
 
   @media only screen and (max-width: 928px) {
-    grid-template-columns: repeat(auto-fit, 124px);
+    grid-template-columns: repeat(auto-fill, minmax(124px, 138px));
+  }
+
+  @media only screen and (max-width: 375px) {
+    grid-template-columns: repeat(auto-fill, 124px);
   }
 `;
 

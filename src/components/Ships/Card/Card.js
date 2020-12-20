@@ -1,5 +1,25 @@
 import React from "react";
-import { CardContainer } from "./Card.styles";
+import { 
+  CardContainer, 
+  CardInput,
+  ShipType,
+  ShipImage,
+  ShipImageContainer,
+  ShipInfo,
+  ShipMeta,
+  ShipID,
+  Dot,
+  ShipTypeText,
+  ShipName,
+  ShipRarityAndFaction,
+  ShipRarity,
+  ShipFaction,
+  ShipAcquisition,
+  ShipBuildPool,
+  ShipBuildTime,
+  ShipDropMap,
+  WikiURL,
+ } from "./Card.styles";
 
 const Card = function({ ship, index, shipArr, setFaction, checked, setChecked, data, setData }) {
   // build filters array for filtering ships
@@ -32,7 +52,6 @@ const Card = function({ ship, index, shipArr, setFaction, checked, setChecked, d
   filters.push(ship.id.slice(0, 6) === "Collab" ? "collab" : "");
   filters.push(ship.collection);
   filters.push(parseInt(ship.id) >= 3005 ? "retrofit" : "");
-
 
   // handle clicking and unclicking of ships
   const onChange = (e) => {
@@ -87,64 +106,63 @@ const Card = function({ ship, index, shipArr, setFaction, checked, setChecked, d
     <CardContainer
       className={`ship show`}
       htmlFor={ship.id}
-      data-id={ship.id}
-      data-index={index}
-      data-name={ship.name}
-      data-class={ship.classAbbr}
-      data-rarity={ship.rarityRank}
-      data-faction={ship.faction}
       checked={ship.checked}
-      // data-collection={ship.id.slice(0, 6) === "Collab" ? false : true}
-      data-filters={filters.join(" ").replace(/\s+/g, " ").trim()}>
-      <input
+    >
+      <CardInput
         type="checkbox"
         id={ship.id}
         onChange={(e) => onChange(e)}
       />
-      <span
+      <ShipType
         className={`ship-type ${ship.classAbbr.toLowerCase()}`}
         data-title={ship.class}>
         {ship.classAbbr}
-      </span>
-      <img
-        className="ship-img rarity-4"
-        src="./assets/img/ship-blank.png"
-        data-echo={`./img/${ship.id}-${ship.name},jpg`}
-        alt={ship.name}
-      />
-      <div className="ship-info">
-        <div className="ship-id-and-ship-type-text">
-          <span className="ship-id">{ship.id}</span>
-          <span
+      </ShipType>
+      <ShipImageContainer className={ship.rarityClass === "rarity-6" ? "shine" : ""}>
+        <ShipImage
+          className="ship-img rarity-4"
+          // src="./assets/img/ship-blank.png"
+          src={`./assets/img/${ship.id}-${ship.nameSafe}.jpg`}
+          data-echo={`./img/${ship.id}-${ship.name}.jpg`}
+          alt={ship.name}
+        />
+      </ShipImageContainer>
+      <ShipInfo className="ship-info">
+        <ShipMeta className="ship-id-and-ship-type-text">
+          <ShipID className="ship-id">{ship.id}</ShipID>
+          <Dot />
+          <ShipTypeText
             className="ship-type-text"
             data-title={ship.class}
             data-abbr={ship.classAbbr}>
             {ship.classAbbr}
-          </span>
-        </div>
-        <h4 className="ship-name">{ship.name}</h4>
-        <div className="ship-rarity-and-ship-faction">
-          <span className="ship-rarity">{ship.rarity}</span>
-          <span className="ship-faction">{ship.faction}</span>
-        </div>
-        <div className="ship-build-pool-and-ship-build-time">
-          <span
+          </ShipTypeText>
+          <Dot />
+          <WikiURL className="dot" href={`${ship.wikiURL}`} target="_blank" title={`${ship.name}'s Wiki entry`}>Wiki</WikiURL>
+        </ShipMeta>
+        <ShipName className="ship-name">{ship.name}</ShipName>
+        <ShipRarityAndFaction className="ship-rarity-and-ship-faction">
+          <ShipRarity className="ship-rarity">{ship.rarity}</ShipRarity>
+          <ShipFaction className="ship-faction">{ship.faction}</ShipFaction>
+        </ShipRarityAndFaction>
+        <ShipAcquisition className="ship-build-pool-and-ship-build-time">
+          <ShipBuildPool
             className="ship-build-pool"
             title={
               ship.buildPool.length ? ship.buildPool[0].pool + " Build" : null
             }>
             {ship.buildPool.length ? ship.buildPool[0].pool + ": " : null}
-          </span>
-          <span className="ship-build-time">
+          </ShipBuildPool>
+          <ShipBuildTime className="ship-build-time">
             {ship.buildPool.length ? ship.buildPool[0].time : null}
-          </span>
-        </div>
-        <div className="ship-drop-map">
+          </ShipBuildTime>
+        </ShipAcquisition>
+        <ShipDropMap className="ship-drop-map">
           {ship.acquisition.length
             ? ship.acquisition[0].task + ": " + ship.acquisition[0].req
             : null}
-        </div>
-      </div>
+        </ShipDropMap>
+      </ShipInfo>
     </CardContainer>
   );
 }
